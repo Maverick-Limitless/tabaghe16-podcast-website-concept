@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podaccess="https://access.acast.com/schema/1.0/" xmlns:acast="https://schema.acast.com/1.0/">
+<channel>
+		<ttl>60</ttl>
+		<generator>acast.com</generator>
+		<title>Tabaghe 16 طبقه</title>
+		<link>https://anchor.fm/soheil-alavi</link>
+		<atom:link href="https://feeds.acast.com/public/shows/625bd31dc030a00012e0dba7" rel="self" type="application/rss+xml"/>
+		<language>fa</language>
+		<copyright>Soheil Alavi</copyright>
+		<itunes:keywords/>
+		<itunes:author>Soheil Alavi</itunes:author>
+		<itunes:subtitle/>
+		<itunes:summary><![CDATA[<p>Hosted by Soheil Alavi, friends come together at his 16th-floor residence in Toronto to engage in captivating conversations about startups, technology, and the various aspects of life. Available on YouTube, Apple, Spotify, Castbox, and all major streaming platforms.</p><br><p>[…]</p>]]></itunes:summary>
+		<description><![CDATA[<p>Hosted by Soheil Alavi, friends come together at his 16th-floor residence in Toronto to engage in captivating conversations about startups, technology, and the various aspects of life. Available on YouTube, Apple, Spotify, Castbox, and all major streaming platforms.</p><br><p>[…]</p>]]></description>
+		<itunes:explicit>false</itunes:explicit>
+		<itunes:owner>
+			<itunes:name>Soheil Alavi</itunes:name>
+			<itunes:email>owner@example.com</itunes:email>
+		</itunes:owner>
+		<acast:showId>625bd31dc030a00012e0dba7</acast:showId>
+		<acast:showUrl>tabaghe16</acast:showUrl>
+		<acast:signature key="EXAMPLE" algorithm="aes-256-cbc"><![CDATA[wbG1Z7+6h9QOi+CR1Dv0uQ==]]></acast:signature>
+		<acast:settings>sanitized-placeholder</acast:settings>
+        <acast:network id="625bd31dc030a00012e0dba9" slug="soheil-alavi"><![CDATA[Soheil Alavi]]></acast:network>
+		<acast:importedFeed>https://anchor.fm/s/2a940a28/podcast/rss</acast:importedFeed>
+		<itunes:type>episodic</itunes:type>
+			<itunes:image href="https://assets.pippa.io/shows/625bd31dc030a00012e0dba7/show-cover.jpg"/>
+			<image>
+				<url>https://assets.pippa.io/shows/625bd31dc030a00012e0dba7/show-cover.jpg</url>
+				<link>https://anchor.fm/soheil-alavi</link>
+				<title>Tabaghe 16 طبقه</title>
+			</image>
+			<itunes:new-feed-url>https://feeds.acast.com/public/shows/625bd31dc030a00012e0dba7</itunes:new-feed-url>
+		
+<item>
+			<title>EP212 - رقابت برای ساخت هوش مصنوعی شخصی | شیرین مجرد، مدیر محصول گوگل</title>
+			<itunes:title>EP212 - رقابت برای ساخت هوش مصنوعی شخصی | شیرین مجرد، مدیر محصول گوگل</itunes:title>
+			<pubDate>Sat, 17 Oct 2026 04:10:06 GMT</pubDate>
+			<itunes:duration>1:41:15</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/6ad2b6333243d006bb488d6d/media.mp3" length="97215216" type="audio/mpeg"/>
+			<guid isPermaLink="false">6ad2b6333243d006bb488d6d</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/tabaghe16/episodes/215-shirin-mojarad</link>
+			<acast:episodeId>6ad2b6333243d006bb488d6d</acast:episodeId>
+			<acast:showId>625bd31dc030a00012e0dba7</acast:showId>
+			<acast:episodeUrl>215-shirin-mojarad</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmRbkUlg2iR8fDtnl1O71B2N8B7jZZH+7YdsHlGFxMJ/JB5ewwSWwnDfITsERRlXnRPdjbJm7d4qQ2rUK1Oh2E65gYDhVAjVZ14DHwOhC8Pz9V978s+D8Mm8KUWF5A2zUXVQE5uj4CRF0/kKFpO+xV+RfHaMA3vATc17/KBX0m9twqeBf6TniEgezfmbr7LwStBKU0BMouAQPu0PPlpGKdVXEENk49ebj1xUHx6kCFKul1cLIrMPfNFEQZDkw4A3Awc6S+b47TLIQ5hZ/3H0d/w/0LxwQaZrV+H1NrHGRSXcqQm0m/QimnFIRxddk2aOlDQuWyiySp/AG8Va/hrzlmpZ5WbvLRp9Pn3rqIQEdW5RQQHRAzPELjLXtGbbyvBRT51Hzb4AVj1sDSA8ZEZ8Y6raKq4mHIhQhQbTC4s3EckCT6+er4enPbfpfSnvrS5hlFQ==]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:episode>212</itunes:episode>
+			<itunes:image href="https://assets.pippa.io/shows/625bd31dc030a00012e0dba7/1792210143891-0e7d78b5-d347-458d-a99f-15e04162080c.jpeg"/>
+			<description><![CDATA[<p>شیرین مجرد، مدیر محصول گوگل در حوزه هوش مصنوعی شخصی، روی زیرساخت شخصی‌سازی و بازیابی اطلاعات کار می‌کنه. پیش از گوگل، در اپل روی جست‌وجوی Apple Maps کار کرده و مسیرش از دکترای یادگیری ماشین و علم داده در حوزه‌های بانکداری و آموزش به ساخت محصول رسیده.</p><br><p>[…]</p><br><p>00:00‎ | ⁧بخش‌هایی از گفتگو⁩</p><br><p>01:44‎ | ⁧مهاجرت و زندگی در سان‌فرانسیسکو⁩</p><br><p>14:10‎ | ⁧از علم داده تا اپل و گوگل⁩</p><br><p>حامیان این قسمت:</p><br><p>https://linktr.ee/tabaghe16</p><br><p>Hosted on Acast. See acast.com/privacy for more information.</p>]]></description>
+			<itunes:summary><![CDATA[<p>شیرین مجرد، مدیر محصول گوگل در حوزه هوش مصنوعی شخصی، روی زیرساخت شخصی‌سازی و بازیابی اطلاعات کار می‌کنه. پیش از گوگل، در اپل روی جست‌وجوی Apple Maps کار کرده و مسیرش از دکترای یادگیری ماشین و علم داده در حوزه‌های بانکداری و آموزش به ساخت محصول رسیده.</p><br><p>[…]</p><br><p>00:00‎ | ⁧بخش‌هایی از گفتگو⁩</p><br><p>01:44‎ | ⁧مهاجرت و زندگی در سان‌فرانسیسکو⁩</p><br><p>14:10‎ | ⁧از علم داده تا اپل و گوگل⁩</p><br><p>حامیان این قسمت:</p><br><p>https://linktr.ee/tabaghe16</p><br><p>Hosted on Acast. See acast.com/privacy for more information.</p>]]></itunes:summary>
+		</item>
+<item>
+			<title>EP 211 - کوروش کوچکیان صبور | مهندسی تبلیغات و یادگیری ماشین در متا</title>
+			<itunes:title>EP 211 - کوروش کوچکیان صبور | مهندسی تبلیغات و یادگیری ماشین در متا</itunes:title>
+			<pubDate>Fri, 09 Oct 2026 08:16:36 GMT</pubDate>
+			<itunes:duration>1:56:39</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/6ac7601c3dc1c1be4adf0abc/media.mp3" length="123902226" type="audio/mpeg"/>
+			<guid isPermaLink="false">6ac7601c3dc1c1be4adf0abc</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/tabaghe16/episodes/korosh-koochekian-sabor</link>
+			<acast:episodeId>6ac7601c3dc1c1be4adf0abc</acast:episodeId>
+			<acast:showId>625bd31dc030a00012e0dba7</acast:showId>
+			<acast:episodeUrl>korosh-koochekian-sabor</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmRbkUlg2iR8fDtnl1O71B2N8B7jZZH+7YdsHlGFxMJ/JB5ewwSWwnDfITsERRlXnRPdjbJm7d4qQ2rUK1Oh2E65gYDhVAjVZ14DHwOhC8Pz9htx0NCn8Gs08HIPB5r5QyvQuEGnORy7eIGZi1xn7i+oHbv4Ay+wnhR67Q+Y6KYqil4n7v6QoveYjUcl6fOqV3pO1N4/fwiKHQTfTBnASfRaZuQi79N3OliSPuhNn4ppKN1jCf/Xu4PsBR9ljHLwwLEFBsZ/oTSirOjYxXntmmnmyXFRz17PXsJw899k0s5xbL26Tfe/ZtTgSJF3jhtFfuYYY+9jqAqgtzn3bTA7m2ag5OYJhR8CVy3S/jt0zltnPMewPqGFmv/06fTKaF66DnaUcwEUyUYJEFF95ao+QSoLnCHowyRHBgwBxAz9Uu1OhbFQojg44JHjZzFGce6WISw==]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:episode>211</itunes:episode>
+			<itunes:image href="https://assets.pippa.io/shows/625bd31dc030a00012e0dba7/1791530826661-bd337a84-2d29-42dd-84e2-f8226ba83d04.jpeg"/>
+			<description><![CDATA[<p>کوروش کوچکیان صبور، دکترای علوم کامپیوتر و متخصص یادگیری ماشینه که در متا روی سیستم‌های پیشنهاددهنده و تبلیغات کار می‌کنه. حوزه‌ای که ترکیبی از مهندسی نرم‌افزار، علم داده، مدل‌های یادگیری ماشین و یکی از بزرگ‌ترین مدل‌های درآمدی اینترنت رو کنار هم قرار می‌ده.</p><br><p>[…]</p><br><p>00:00 ‎- ‏بخش‌هایی از گفتگو</p><br><p>01:42 ‎- ‏مسیر حرفه‌ای کوروش و تجربه کار در شرکت‌های بزرگ</p><br><p>17:47 ‎- ‏سیستم پیشنهاددهنده و تبلیغات متا</p><br><p>حامیان این قسمت:</p><br><p>https://linktr.ee/tabaghe16</p><br><p>Hosted on Acast. See acast.com/privacy for more information.</p>]]></description>
+			<itunes:summary><![CDATA[<p>کوروش کوچکیان صبور، دکترای علوم کامپیوتر و متخصص یادگیری ماشینه که در متا روی سیستم‌های پیشنهاددهنده و تبلیغات کار می‌کنه. حوزه‌ای که ترکیبی از مهندسی نرم‌افزار، علم داده، مدل‌های یادگیری ماشین و یکی از بزرگ‌ترین مدل‌های درآمدی اینترنت رو کنار هم قرار می‌ده.</p><br><p>[…]</p><br><p>00:00 ‎- ‏بخش‌هایی از گفتگو</p><br><p>01:42 ‎- ‏مسیر حرفه‌ای کوروش و تجربه کار در شرکت‌های بزرگ</p><br><p>17:47 ‎- ‏سیستم پیشنهاددهنده و تبلیغات متا</p><br><p>حامیان این قسمت:</p><br><p>https://linktr.ee/tabaghe16</p><br><p>Hosted on Acast. See acast.com/privacy for more information.</p>]]></itunes:summary>
+		</item>
+<item>
+			<title>EP 210 - نگار صابریان | دانشمند و معاون ارشد لیفت</title>
+			<itunes:title>EP 210 - نگار صابریان | دانشمند و معاون ارشد لیفت</itunes:title>
+			<pubDate>Fri, 02 Oct 2026 06:11:55 GMT</pubDate>
+			<itunes:duration>1:36:22</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/6abe3cfe56d8e12f0925a72a/media.mp3" length="148629537" type="audio/mpeg"/>
+			<guid isPermaLink="false">6abe3cfe56d8e12f0925a72a</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/tabaghe16/episodes/ep-210</link>
+			<acast:episodeId>6abe3cfe56d8e12f0925a72a</acast:episodeId>
+			<acast:showId>625bd31dc030a00012e0dba7</acast:showId>
+			<acast:episodeUrl>ep-210</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmRbkUlg2iR8fDtnl1O71B2N8B7jZZH+7YdsHlGFxMJ/JB5ewwSWwnDfITsERRlXnRPdjbJm7d4qQ2rUK1Oh2E65gYDhVAjVZ14DHwOhC8Pz9JYYvufTQ/N0IAttBnCdT64MJGy9WcrZkBrK0OA9bgbZHmibynZZnkdWRevFKnBxuLL5fkNBIy8GlQcnvOnMH+A1w3jtYm1hx/F7zz/BcoggEpIHzVfYJz7YxldilrPRKtZmiktTp7RG3yR9HwrEnntL4RUXO0qWOktDAmEcpQGPSG+U5RalzNnZ2BRfJycvjhuemfivcg0Jw4iT7FrXT4v61nLLTdq97h1h5t9Y4yTF9h+IuNQORcdXdCDTvHJ1kB4T9/sZUu3mfENIntZ9ktok/YauxtTiwBoDIJ9bume1b+E9OxrtQmJTb2RgGhXSN03EZIqplJMthpZ9myyyKkA==]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:episode>210</itunes:episode>
+			<itunes:image href="https://assets.pippa.io/shows/625bd31dc030a00012e0dba7/1790920317955-ded4c3a4-78b1-4d86-959e-9d8b59925cd1.jpeg"/>
+			<description><![CDATA[<p>نگار صابریان از مدیران ارشد شرکت Lyft، یکی از بزرگ‌ترین پلتفرم‌های تاکسی اینترنتی در آمریکاست. با پس‌زمینه‌ی مهندسی صنایع و ریاضی، سال‌هاست که در حوزه‌ی علم داده، تحقیق در عملیات و بهینه‌سازی فعالیت می‌کنه.</p><br><p>[…]</p><br><p>00:00‌ مقدمه</p><br><p>04:12‌ مسیر نگار تا Lyft</p><br><p>14:26‌ تحصیل، مهاجرت و شروع کار در آمریکا</p><br><p>حامیان این قسمت:</p><br><p>https://linktr.ee/tabaghe16</p><br><p>Hosted on Acast. See acast.com/privacy for more information.</p>]]></description>
+			<itunes:summary><![CDATA[<p>نگار صابریان از مدیران ارشد شرکت Lyft، یکی از بزرگ‌ترین پلتفرم‌های تاکسی اینترنتی در آمریکاست. با پس‌زمینه‌ی مهندسی صنایع و ریاضی، سال‌هاست که در حوزه‌ی علم داده، تحقیق در عملیات و بهینه‌سازی فعالیت می‌کنه.</p><br><p>[…]</p><br><p>00:00‌ مقدمه</p><br><p>04:12‌ مسیر نگار تا Lyft</p><br><p>14:26‌ تحصیل، مهاجرت و شروع کار در آمریکا</p><br><p>حامیان این قسمت:</p><br><p>https://linktr.ee/tabaghe16</p><br><p>Hosted on Acast. See acast.com/privacy for more information.</p>]]></itunes:summary>
+		</item>
+<item>
+			<title>فراتر از استارتاپ | مهراد هیدن، سعید رحمانی، سهیل</title>
+			<itunes:title>فراتر از استارتاپ | مهراد هیدن، سعید رحمانی، سهیل</itunes:title>
+			<pubDate>Thu, 28 Aug 2025 13:28:49 GMT</pubDate>
+			<itunes:duration>1:43:03</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/68aef5cae09d6b0865be1c48/media.mp3" length="123670560" type="audio/mpeg"/>
+			<guid isPermaLink="false">68aef5cae09d6b0865be1c48</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/tabaghe16/episodes/ep-190</link>
+			<acast:episodeId>68aef5cae09d6b0865be1c48</acast:episodeId>
+			<acast:showId>625bd31dc030a00012e0dba7</acast:showId>
+			<acast:episodeUrl>ep-190</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmRbkUlg2iR8fDtnl1O71B2N8B7jZZH+7YdsHlGFxMJ/JB5ewwSWwnDfITsERRlXnRPdjbJm7d4qQ2rUK1Oh2E65gYDhVAjVZ14DHwOhC8Pz9zA3Bvzt4JrhnAAFqErm+a9OA1/5TV5gHC/nPeTfdQDVaeki4jv+QRJphpdcfIXqWyOn7HguC3Aw4zEUqgRC3Ni8YqjsF1ZwE8aYm7s0VrUQKMz1/59hGRAvz5LgpAHtCn0yUYHs7MGGocRksgqRdqsdMN1s+HtIQGVdoHmInb7ah/G37oUDFf0VP4VDDwYggEBFxP6fmljqJUE1sP172RAHz110II7LHZz5/4VVH1WBr1m9z57m9y8Nu+XQ4B3oIjhritrBTHwU9L4MplWXbcpBGBUXItEqZ1vT5pbiJKP67olZK8PGRk9m91W9rYI+VfM/7BjcJje1i25h0khz+mw==]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:episode>190</itunes:episode>
+			<itunes:image href="https://assets.pippa.io/shows/625bd31dc030a00012e0dba7/1756298266427-dcd4c37e-9dd2-4205-b7af-2e2344ed85b4.jpeg"/>
+			<description><![CDATA[<p>بعضی وقتا بهترین حرفا وقتی پیش میاد که هیچ قصد و برنامه‌ای نداری. این اپیزود هم دقیقاً همین‌طوری شکل گرفت. من، مهراد هیدن و سعید رحمانی توی لندن دور هم جمع شدیم فقط برای یه شب خودمونی. قصدمون فقط دیدار و حال‌و‌احوال بود، اما آخر سر میکروفون روشن شد و نتیجه‌ش همین گفت‌وگویی شد که الان دارین می‌شنوین.</p><br><p>[…]</p><br><p>00:00:00 مقدمه</p><br><p>00:01:35 آیا صدا مهم‌تر از تصویره؟</p><br><p>00:05:19 مهم‌ترین ویژگی یک کارآفرین چیه؟</p><br><p>https://linktr.ee/tabaghe16</p><br><p>Hosted on Acast. See acast.com/privacy for more information.</p>]]></description>
+			<itunes:summary><![CDATA[<p>بعضی وقتا بهترین حرفا وقتی پیش میاد که هیچ قصد و برنامه‌ای نداری. این اپیزود هم دقیقاً همین‌طوری شکل گرفت. من، مهراد هیدن و سعید رحمانی توی لندن دور هم جمع شدیم فقط برای یه شب خودمونی. قصدمون فقط دیدار و حال‌و‌احوال بود، اما آخر سر میکروفون روشن شد و نتیجه‌ش همین گفت‌وگویی شد که الان دارین می‌شنوین.</p><br><p>[…]</p><br><p>00:00:00 مقدمه</p><br><p>00:01:35 آیا صدا مهم‌تر از تصویره؟</p><br><p>00:05:19 مهم‌ترین ویژگی یک کارآفرین چیه؟</p><br><p>https://linktr.ee/tabaghe16</p><br><p>Hosted on Acast. See acast.com/privacy for more information.</p>]]></itunes:summary>
+		</item>
+<item>
+			<title><![CDATA[EP 203 - [English] Inside Shopify's Product DNA | Product VP of Shopify]]></title>
+			<itunes:title><![CDATA[EP 203 - [English] Inside Shopify's Product DNA | Product VP of Shopify]]></itunes:title>
+			<pubDate>Fri, 31 Jul 2026 13:07:47 GMT</pubDate>
+			<itunes:duration>1:38:33</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/6a6b1f092a5f0f30725584cc/media.mp3" length="94620943" type="audio/mpeg"/>
+			<guid isPermaLink="false">6a6b1f092a5f0f30725584cc</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/tabaghe16/episodes/brandon-chu</link>
+			<acast:episodeId>6a6b1f092a5f0f30725584cc</acast:episodeId>
+			<acast:showId>625bd31dc030a00012e0dba7</acast:showId>
+			<acast:episodeUrl>brandon-chu</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmRbkUlg2iR8fDtnl1O71B2N8B7jZZH+7YdsHlGFxMJ/JB5ewwSWwnDfITsERRlXnRPdjbJm7d4qQ2rUK1Oh2E65gYDhVAjVZ14DHwOhC8Pz9QMz7dXJKtUmlsujc0LsbRGPN39HhoZ+fjea92eWwgu/B7Us1TitHaKMb22StFq+FmspROzpjIZ1hUNlYQlTiEzcFWw1mQc4vrQHMqPmXXC8XxIw9pWpcuZkC/yjuk7zPZELiKGON2ZnVuLxJECsdOpdvQ+pGgCPFE38XqnNnqtBVD+WiCtQS4iXVY6LgpQ0QJNEisLlSXYynuE1Vd0Aa36QzOnVwUjjE8pD642CrGx+rMG88zQyF+zcx5vRh8rSJMOcJyxkKxkYjuiPV9CpxZcZXsN7Ne0kK6w+VQR20du1uokJIe4RhLbZOiHQU57sWyK3Zl9jEAbAqJyyMvxaKGKV32CSSc3NBbMhfh57YQe0=]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:episode>203</itunes:episode>
+			<itunes:image href="https://assets.pippa.io/shows/625bd31dc030a00012e0dba7/1785502998840-186ea7b1-40db-4e8d-a8ab-e4c83b281c1d.jpeg"/>
+			<description><![CDATA[<p>📌 توجه برای شنوندگان فارسی‌زبان:</p><br><p>[…]</p><br><p>0:00 Intro</p><br><p>2:30 Life After Leaving Shopify</p><br><p>4:00 From FreshBooks to Shopify</p><br><p>https://linktr.ee/tabaghe16</p><br><p>Hosted on Acast. See acast.com/privacy for more information.</p>]]></description>
+			<itunes:summary><![CDATA[<p>📌 توجه برای شنوندگان فارسی‌زبان:</p><br><p>[…]</p><br><p>0:00 Intro</p><br><p>2:30 Life After Leaving Shopify</p><br><p>4:00 From FreshBooks to Shopify</p><br><p>https://linktr.ee/tabaghe16</p><br><p>Hosted on Acast. See acast.com/privacy for more information.</p>]]></itunes:summary>
+		</item>
+<item>
+			<title>Episode 145 - Masoud Shahmoradi | داستان موفقیت فروشگاه اینترنتی خانومی</title>
+			<itunes:title>Episode 145 - Masoud Shahmoradi | داستان موفقیت فروشگاه اینترنتی خانومی</itunes:title>
+			<pubDate>Fri, 26 Jul 2024 16:30:21 GMT</pubDate>
+			<itunes:duration>2:03:48</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/66a3ce6230d20f0a5fe87541/media.mp3" length="118856493" type="audio/mpeg"/>
+			<guid isPermaLink="false">66a3ce6230d20f0a5fe87541</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://shows.acast.com/tabaghe16/episodes/ep-145-masoud-shahmoradi</link>
+			<acast:episodeId>66a3ce6230d20f0a5fe87541</acast:episodeId>
+			<acast:showId>625bd31dc030a00012e0dba7</acast:showId>
+			<acast:episodeUrl>ep-145-masoud-shahmoradi</acast:episodeUrl>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmRbkUlg2iR8fDtnl1O71B2N8B7jZZH+7YdsHlGFxMJ/JB5ewwSWwnDfITsERRlXnRPdjbJm7d4qQ2rUK1Oh2E65gYDhVAjVZ14DHwOhC8Pz9p3sBt6nt9hbrPpuBbthgeDtgntuVKLr5cLonaxDJxspNz5KPhuZ2/ec2K1LZuQln9lJ2UMxuxsQ4A+6ihUuyMwPE9+lgr2GZYrYDw9ty367xsoVnevxHmlFrABYXPvpPVVC2LglCrxo83J/xwGYhIpO4gMkmdV+Aa02n86z/uSCZZZXc9rXJOYXxqdLT3UJnILgyaR8knkvaXTPyjVd/3kGEyEbuvtaSOePNEHiZcPdXn1QVFwfn15tBDTqu8tTI6HD5+CoQXJh3gKOOfI2hQG6gNAlRUKmsSDYlXKBjT/yhCe4ilaUEhUM3vn5xdK1duz8rpLRSwpqJI6lsufgohv6Ccp8HCF2XIRp2Ef+hrTg=]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:image href="https://assets.pippa.io/shows/625bd31dc030a00012e0dba7/1722011178106-278fc021f21b0ed89e1b529017071555.jpeg"/>
+			<description><![CDATA[<p>در این قسمت، با مسعود شاهمرادی، بنیان‌گذار و مدیرعامل خانومی، درباره مسیر ساخت یکی از پیشروترین پلتفرم‌های تجارت الکترونیک در ایران گفتگو کردم. درباره چالش‌های صنعت زیبایی و مراقبت از پوست، اهمیت نوآوری مشتری‌محور و دیدگاه مسعود برای آینده خرید آنلاین در ایران صحبت کردیم.</p><br><p>[…]</p><br><p>اسپانسر این قسمت</p><br><p>Everywhere else https://linktr.ee/tabaghe16</p><br><p>Hosted on Acast. See acast.com/privacy for more information.</p>]]></description>
+			<itunes:summary><![CDATA[<p>در این قسمت، با مسعود شاهمرادی، بنیان‌گذار و مدیرعامل خانومی، درباره مسیر ساخت یکی از پیشروترین پلتفرم‌های تجارت الکترونیک در ایران گفتگو کردم. درباره چالش‌های صنعت زیبایی و مراقبت از پوست، اهمیت نوآوری مشتری‌محور و دیدگاه مسعود برای آینده خرید آنلاین در ایران صحبت کردیم.</p><br><p>[…]</p><br><p>اسپانسر این قسمت</p><br><p>Everywhere else https://linktr.ee/tabaghe16</p><br><p>Hosted on Acast. See acast.com/privacy for more information.</p>]]></itunes:summary>
+		</item>
+<item>
+			<title>Episode 1 - Mohsen Malayeri محسن ملایری</title>
+			<itunes:title>Episode 1 - Mohsen Malayeri محسن ملایری</itunes:title>
+			<pubDate>Tue, 07 Jul 2020 13:22:37 GMT</pubDate>
+			<itunes:duration>1:20:37</itunes:duration>
+			<enclosure url="https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/ca748a5e-6cb9-4253-8a2b-48235c27ab55/media.mp3" length="78233179" type="audio/mpeg"/>
+			<guid isPermaLink="false">ca748a5e-6cb9-4253-8a2b-48235c27ab55</guid>
+			<itunes:explicit>false</itunes:explicit>
+			<link>https://anchor.fm/soheil-alavi/episodes/Episode-1---Mohsen-Malayeri-egdult</link>
+			<acast:episodeId>625bd3226d9868001530be0d</acast:episodeId>
+			<acast:showId>625bd31dc030a00012e0dba7</acast:showId>
+			<acast:settings><![CDATA[FYjHyZbXWHZ7gmX8Pp1rmRbkUlg2iR8fDtnl1O71B2N8B7jZZH+7YdsHlGFxMJ/JB5ewwSWwnDfITsERRlXnRPdjbJm7d4qQ2rUK1Oh2E65gYDhVAjVZ14DHwOhC8Pz9nh44LJIBwn8IWCwdjoChcA84QnoGgM3RS4LPIVvH0gTVer5feHponqrLIlrvoWMAsHi9D+UcxiU6rZZxB2rX2zY0DOeKPc27NKKnB7L1uYsU/EM6aPq1DMBtwZih/9J8ZSdLr/pNXirIoGAc31rDhgUvEen8hx1BFk4ui4DpH8asPS8kAZrDSNftjJXkvR1BbRy6ehcxxGA+jiFR4e3eexR/dlZQGgWfZbRN7X5AQxwzyHCJHthdmkrZnrub5fiEYGgYehE4pDBXICFx+P28inp/GVmdR+KkGVYGlEsYm4W9TBp4Oxb0P6UXLwfGoQwh]]></acast:settings>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:season>1</itunes:season>
+			<itunes:episode>1</itunes:episode>
+			<itunes:image href="https://assets.pippa.io/shows/625bd31dc030a00012e0dba7/show-cover.jpg"/>
+			<description><![CDATA[<p>Mohsen is a co-founder of Tribe. a founding partner of Avatech that was recognized as top ten seed-investor and accelerator in the Middle East by Gust. Mohsen has been a key speaker at StartupTurkey, TEDx, StartupGrind and his works have been featured on Forbes, NPR, Guardian, and a16z.</p><br><p>Hosted on Acast. See acast.com/privacy for more information.</p>]]></description>
+			<itunes:summary><![CDATA[<p>Mohsen is a co-founder of Tribe. a founding partner of Avatech that was recognized as top ten seed-investor and accelerator in the Middle East by Gust. Mohsen has been a key speaker at StartupTurkey, TEDx, StartupGrind and his works have been featured on Forbes, NPR, Guardian, and a16z.</p><br><p>Hosted on Acast. See acast.com/privacy for more information.</p>]]></itunes:summary>
+		</item>
+</channel>
+</rss>

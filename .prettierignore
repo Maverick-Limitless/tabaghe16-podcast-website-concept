@@ -1,0 +1,14 @@
+node_modules/
+build/
+.svelte-kit/
+.vite/
+coverage/
+test-results/
+playwright-report/
+playwright/.cache/
+pnpm-lock.yaml
+.DS_Store
+
+# Inputs this project does not own and must not reformat.
+docs/**
+tests/fixtures/**

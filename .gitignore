@@ -1,0 +1,25 @@
+# Dependencies / build output
+node_modules/
+build/
+.svelte-kit/
+
+# Environment — only the example is committed
+.env
+.env.*
+!.env.example
+
+# The live-synced store: generated from the official feed by `pnpm run sync`
+# (scripts/sync.ts). The rights-safe demo store (data/demo-store/) is the
+# committed default; never commit the live feed's editorial content.
+data/store/
+
+# Test and tooling output — never published
+test-results/
+playwright-report/
+coverage/
+# Local screenshot re-captures live in docs/screenshots and ARE committed
+# (the README embeds them); only ad-hoc tool output is ignored.
+
+# Local state
+.DS_Store
+*.log

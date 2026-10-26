@@ -1,0 +1,76 @@
+{
+  "source": "parsed from the chapter lines in the description of EP 211 in the official Acast feed (plain text, bidi control characters stripped)",
+  "episode": "EP 211 - کوروش کوچکیان صبور | مهندسی تبلیغات و یادگیری ماشین در متا",
+  "chapters": [
+    {
+      "timeRaw": "00:00",
+      "timeSeconds": 0,
+      "label": "بخش‌هایی از گفتگو"
+    },
+    {
+      "timeRaw": "01:42",
+      "timeSeconds": 102,
+      "label": "مسیر حرفه‌ای کوروش و تجربه کار در شرکت‌های بزرگ"
+    },
+    {
+      "timeRaw": "17:47",
+      "timeSeconds": 1067,
+      "label": "سیستم پیشنهاددهنده و تبلیغات متا"
+    },
+    {
+      "timeRaw": "20:24",
+      "timeSeconds": 1224,
+      "label": "حریم خصوصی، داده‌های آموزشی و کمبریج آنالیتیکا"
+    },
+    {
+      "timeRaw": "31:50",
+      "timeSeconds": 1910,
+      "label": "ایجنت‌های هوش مصنوعی و رقابت شرکت‌ها"
+    },
+    {
+      "timeRaw": "40:00",
+      "timeSeconds": 2400,
+      "label": "مارک زاکربرگ و آینده پلتفرم‌های متا"
+    },
+    {
+      "timeRaw": "44:45",
+      "timeSeconds": 2685,
+      "label": "مدل اقتصادی تبلیغات و اینترنت رایگان"
+    },
+    {
+      "timeRaw": "51:20",
+      "timeSeconds": 3080,
+      "label": "نقش هوش مصنوعی در تولید و انتخاب تبلیغات"
+    },
+    {
+      "timeRaw": "01:04:36",
+      "timeSeconds": 3876,
+      "label": "آینده تبلیغات در دنیای ایجنت‌ها"
+    },
+    {
+      "timeRaw": "01:12:01",
+      "timeSeconds": 4321,
+      "label": "ارتباط ایجنت‌ها با سرویس‌ها و فروشگاه‌ها"
+    },
+    {
+      "timeRaw": "01:24:03",
+      "timeSeconds": 5043,
+      "label": "دسترسی به داده‌های کاربران و حریم خصوصی در متا"
+    },
+    {
+      "timeRaw": "01:30:37",
+      "timeSeconds": 5437,
+      "label": "تغییر شیوه کار مهندس‌ها با هوش مصنوعی"
+    },
+    {
+      "timeRaw": "01:35:40",
+      "timeSeconds": 5740,
+      "label": "رقابت متا، گوگل و اپل در هوش مصنوعی"
+    },
+    {
+      "timeRaw": "01:44:00",
+      "timeSeconds": 6240,
+      "label": "شخصی‌سازی و آینده تعامل انسان با هوش مصنوعی"
+    }
+  ]
+}

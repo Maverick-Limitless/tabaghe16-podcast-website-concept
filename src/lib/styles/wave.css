@@ -1,0 +1,372 @@
+/**
+ * «موجِ زیر فرش» — the signature fabric-wave press (docs/DESIGN.md §6).
+ *
+ * One global stylesheet for the whole site's signature interaction, driven
+ * entirely by the motion tokens. The button is a fabric membrane over a hidden
+ * pad: on contact the membrane presses in (scale only), a dip ring travels
+ * outward from the contact point, a highlight swell trails behind it — light
+ * and shadow displaced the way a ripple moves under a thin carpet layer — and
+ * the weave settles with one controlled spring overshoot.
+ *
+ * Anatomy is written here once; WaveButton and the play control both consume
+ * it, so the motion is one system, not a per-button one-off.
+ *
+ * All animated properties are transform/opacity/filter: no layout property
+ * ever moves, so the wave cannot create a layout shift (PRD §7.2).
+ */
+
+/*
+ * Phases (§6): contact 0–90 ms (the press) → traverse 90–450 ms (the dip ring
+ * and swell) → settle 450–520 ms (spring recovery). Traverse + settle total
+ * --dur-wave, inside the brief's 350–650 ms band. The bound action never waits
+ * for the wave: every phase is decorative and runs on its own timeline.
+ */
+:root {
+  --dur-wave-travel: 360ms;
+  --dur-wave-settle: 160ms;
+  /* The dip's amplitude is deliberately furniture-small, never water. */
+  --wave-amp: 0.14;
+  --wave-lag: 60ms;
+}
+
+/* -- The membrane --------------------------------------------------------- */
+
+.wave-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  min-height: 48px;
+  padding-inline: var(--sp-6);
+  border: 1px solid transparent;
+  border-radius: var(--r-control);
+  font-family: var(--font-body);
+  font-size: var(--fs-label);
+  font-weight: 500;
+  line-height: var(--lh-label);
+  text-decoration: none;
+  cursor: pointer;
+  /* The hit target never depends on the membrane's pressed scale. */
+  isolation: isolate;
+  transition:
+    background-color var(--dur-micro) var(--ease-press),
+    border-color var(--dur-micro) var(--ease-press),
+    color var(--dur-micro) var(--ease-press);
+}
+
+/* The membrane clips both wave layers to the rounded surface. */
+.wave-fabric {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+  will-change: transform;
+}
+
+/*
+ * Both wave layers are positioned at the contact point, written as
+ * percentages by the wave action (--wx/--wy), so the wave stays correct
+ * through resizes and the keyboard's center origin is simply 50%/50%.
+ * Percentages of the button box: a pseudo-element sized from --wave-size
+ * scales outward from that point.
+ */
+.wave-fabric::before,
+.wave-fabric::after {
+  content: "";
+  position: absolute;
+  left: var(--wx, 50%);
+  top: var(--wy, 50%);
+  width: var(--wave-size, 140%);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+/* The dip ring — the shadow of the pressed fabric, travelling. */
+.wave-fabric::before {
+  background: radial-gradient(circle, var(--wave-tint, var(--ink)) 0%, transparent 72%);
+  background-repeat: no-repeat;
+  box-shadow: none;
+}
+
+/*
+ * The dip ring reads as a *ring* through a mask: a 2px band at its edge,
+ * fading inward — the crease line moving under the carpet.
+ */
+.wave-fabric::before {
+  mask-image: radial-gradient(circle, transparent 0%, transparent 68%, #000 72%, transparent 78%);
+}
+
+/* The highlight swell — light catching the stretched weave, trailing. */
+.wave-fabric::after {
+  background: radial-gradient(circle, var(--wave-shine, var(--paper)) 0%, transparent 70%);
+  transition-delay: var(--wave-lag);
+}
+
+/* Traverse: both layers scale out from the origin and fade as they travel. */
+.is-pressing .wave-fabric::before {
+  animation: wave-dip var(--dur-wave-travel) var(--ease-out-soft) forwards;
+}
+
+.is-pressing .wave-fabric::after {
+  animation: wave-swell var(--dur-wave-travel) var(--ease-out-soft) var(--wave-lag) both;
+}
+
+/* Settle: the membrane releases — one small overshoot, controlled spring. */
+.is-settling .wave-fabric {
+  animation: wave-settle var(--dur-wave-settle) var(--ease-settle) forwards;
+}
+
+@keyframes wave-dip {
+  from {
+    transform: translate(-50%, -50%) scale(0.06);
+    opacity: var(--wave-amp);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes wave-swell {
+  from {
+    transform: translate(-50%, -50%) scale(0.04);
+    opacity: calc(var(--wave-amp) * 0.6);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+  }
+}
+
+@keyframes wave-settle {
+  0% {
+    transform: scale(0.985);
+  }
+  60% {
+    transform: scale(1.004);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*
+ * Contact: the press itself is transform-only and instant. Without any
+ * script this also fires on :active — the no-JS baseline keeps immediate
+ * depress plus a static center sheen, never a dead button.
+ */
+.wave-btn.is-pressing .wave-fabric {
+  transform: scale(0.985);
+  transition: transform var(--dur-micro) var(--ease-press);
+}
+
+.wave-btn:active .wave-fabric {
+  transform: scale(0.985);
+  transition: transform var(--dur-micro) var(--ease-press);
+}
+
+/* Static center sheen for the no-script baseline. */
+.wave-btn:active .wave-fabric::before {
+  opacity: calc(var(--wave-amp) * 0.5);
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+.wave-btn:active .wave-fabric::after {
+  opacity: calc(var(--wave-amp) * 0.3);
+  transform: translate(-50%, -50%) scale(0.4);
+}
+
+/* -- Variants ------------------------------------------------------------- */
+
+/*
+ * Ink face (the hero CTA, the play control, the listen band): the room at
+ * night. Its wave tint is paper, its shine is ink — the light and shadow of
+ * a lit window against the facade (DESIGN.md §2.1, §6).
+ */
+.wave-btn--ink {
+  background-color: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+  --wave-tint: var(--paper);
+  --wave-shine: var(--ink);
+}
+
+.wave-btn--ink:hover {
+  background-color: var(--graphite);
+  border-color: var(--graphite);
+}
+
+/*
+ * Surface face (the light buttons on paper): the wave tint is ink, the
+ * shine paper — the carpet dip on a light surface.
+ */
+.wave-btn--surface {
+  background-color: var(--surface);
+  border-color: var(--stone);
+  color: var(--ink);
+  --wave-tint: var(--ink);
+  --wave-shine: var(--paper);
+}
+
+.wave-btn--surface:hover {
+  border-color: var(--ink);
+}
+
+/* A quiet text-link action: no face, no wave — differentiation on purpose. */
+.wave-btn--quiet {
+  padding-inline: var(--sp-2);
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--stone);
+  text-underline-offset: 0.25em;
+}
+
+.wave-btn--quiet:hover {
+  text-decoration-color: currentColor;
+}
+
+.wave-btn--quiet .wave-fabric {
+  display: none;
+}
+
+/* -- Sizes ---------------------------------------------------------------- */
+
+.wave-btn--lg {
+  min-height: 56px;
+  padding-inline: var(--sp-7);
+  font-size: var(--fs-body-s);
+}
+
+/*
+ * Round play controls: the listen band's main control (56px) and the
+ * mini-player's (40px). One shape system — --r-chip-derived circle, not a
+ * separate ad-hoc circle per player (PRD §6.4).
+ */
+.wave-btn--round {
+  width: 56px;
+  min-height: 56px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: var(--fs-body);
+}
+
+.wave-btn--round-sm {
+  width: 40px;
+  min-height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: var(--fs-meta);
+}
+
+/* -- States --------------------------------------------------------------- */
+
+.wave-btn:disabled,
+.wave-btn[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.wave-btn--ink:disabled {
+  background-color: var(--graphite);
+  border-color: var(--graphite);
+  color: var(--stone);
+}
+
+.wave-btn--surface:disabled {
+  border-color: var(--stone);
+  color: var(--muted);
+}
+
+/* Pending: label swaps, width is preserved, no wave runs. */
+.wave-btn--pending {
+  cursor: progress;
+}
+
+.wave-btn--pending .wave-fabric {
+  display: none;
+}
+
+.wave-spinner {
+  display: inline-flex;
+  gap: 3px;
+  direction: ltr;
+}
+
+.wave-spinner span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: currentColor;
+  animation: wave-tick 900ms var(--ease-out-soft) infinite;
+}
+
+.wave-spinner span:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.wave-spinner span:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+@keyframes wave-tick {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+}
+
+/*
+ * Reduced motion (PRD §7.1.8): no travelling wave, no scale — only an
+ * immediate 120 ms colour shift, plus the same ink focus ring. Nothing about
+ * the button's function changes.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .wave-fabric::before,
+  .wave-fabric::after {
+    animation: none !important;
+    opacity: 0 !important;
+    transform: none !important;
+  }
+
+  .wave-fabric {
+    animation: none !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .wave-btn.is-pressing {
+    background-color: var(--graphite);
+  }
+
+  .wave-btn--surface.is-pressing {
+    background-color: var(--surface);
+    border-color: var(--ink);
+  }
+
+  .wave-spinner span {
+    animation: wave-tick-reduced 1.2s steps(2, jump-none) infinite;
+  }
+
+  @keyframes wave-tick-reduced {
+    0%,
+    100% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+}

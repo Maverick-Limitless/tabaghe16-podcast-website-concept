@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!--
+    The site mark, in the design system's own language (docs/DESIGN.md
+    §5.7): the numeral as text, not a re-drawn logo — rounded paper
+    surface at the card radius, ink numeral, no other mark invented. The
+    Latin "16" is the show's own bilingual numeral (its episode numbering
+    and English title both use it) and, unlike a Persian glyph, renders
+    identically in every favicon context without loading a webfont.
+  -->
+  <rect width="64" height="64" rx="14" fill="#F4F0E8"/>
+  <text x="32" y="45" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="34" font-weight="700" fill="#111111">16</text>
+</svg>

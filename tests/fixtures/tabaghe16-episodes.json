@@ -1,0 +1,165 @@
+{
+  "source": "sanitized samples generated from the official Acast RSS feed (https://feeds.acast.com/public/shows/tabaghe16), fetched live on 2026-10-22; real feed has 214 items",
+  "episodes": [
+    {
+      "guid": "6ad2b6333243d006bb488d6d",
+      "episodeNo": 212,
+      "season": null,
+      "title": "EP212 - رقابت برای ساخت هوش مصنوعی شخصی | شیرین مجرد، مدیر محصول گوگل",
+      "titleParts": [
+        "EP212 - رقابت برای ساخت هوش مصنوعی شخصی",
+        "شیرین مجرد، مدیر محصول گوگل"
+      ],
+      "publishedAt": "2026-10-17T04:10:06.000Z",
+      "durationRaw": "1:41:15",
+      "durationSeconds": 6075,
+      "pageUrl": "https://shows.acast.com/tabaghe16/episodes/215-shirin-mojarad",
+      "acastEpisodeUrl": "215-shirin-mojarad",
+      "audioUrl": "https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/6ad2b6333243d006bb488d6d/media.mp3",
+      "audioBytes": 97215216,
+      "audioType": "audio/mpeg",
+      "imageUrl": "https://assets.pippa.io/shows/625bd31dc030a00012e0dba7/1792210143891-0e7d78b5-d347-458d-a99f-15e04162080c.jpeg",
+      "descriptionExcerpt": "شیرین مجرد، مدیر محصول گوگل در حوزه هوش مصنوعی شخصی، روی زیرساخت شخصی‌سازی و بازیابی اطلاعات کار می‌کنه. پیش از گوگل، در اپل روی جست‌وجوی Apple Maps کار کرده و مسیرش از دکترای یادگیری ماشین و علم داده در حوزه‌های بانکداری و آموزش به ساخت محصول رسیده. […] 00:00‎ | ⁧بخش‌هایی از گفتگو⁩ 01:44‎ | ⁧مهاجرت…",
+      "hasChapterTimestamps": true,
+      "sponsorMention": true,
+      "note": "newest format: LRM|FSI chapter style, sponsor supporters block, slug mismatch (215- for EP212)"
+    },
+    {
+      "guid": "6ac7601c3dc1c1be4adf0abc",
+      "episodeNo": 211,
+      "season": null,
+      "title": "EP 211 - کوروش کوچکیان صبور | مهندسی تبلیغات و یادگیری ماشین در متا",
+      "titleParts": [
+        "EP 211 - کوروش کوچکیان صبور",
+        "مهندسی تبلیغات و یادگیری ماشین در متا"
+      ],
+      "publishedAt": "2026-10-09T08:16:36.000Z",
+      "durationRaw": "1:56:39",
+      "durationSeconds": 6999,
+      "pageUrl": "https://shows.acast.com/tabaghe16/episodes/korosh-koochekian-sabor",
+      "acastEpisodeUrl": "korosh-koochekian-sabor",
+      "audioUrl": "https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/6ac7601c3dc1c1be4adf0abc/media.mp3",
+      "audioBytes": 123902226,
+      "audioType": "audio/mpeg",
+      "imageUrl": "https://assets.pippa.io/shows/625bd31dc030a00012e0dba7/1791530826661-bd337a84-2d29-42dd-84e2-f8226ba83d04.jpeg",
+      "descriptionExcerpt": "کوروش کوچکیان صبور، دکترای علوم کامپیوتر و متخصص یادگیری ماشینه که در متا روی سیستم‌های پیشنهاددهنده و تبلیغات کار می‌کنه. حوزه‌ای که ترکیبی از مهندسی نرم‌افزار، علم داده، مدل‌های یادگیری ماشین و یکی از بزرگ‌ترین مدل‌های درآمدی اینترنت رو کنار هم قرار می‌ده. […] 00:00 ‎- ‏بخش‌هایی از گفتگو 01:42 ‎- …",
+      "hasChapterTimestamps": true,
+      "sponsorMention": true,
+      "note": "chapter style 2: LRM + hyphen + RLM"
+    },
+    {
+      "guid": "6abe3cfe56d8e12f0925a72a",
+      "episodeNo": 210,
+      "season": null,
+      "title": "EP 210 - نگار صابریان | دانشمند و معاون ارشد لیفت",
+      "titleParts": [
+        "EP 210 - نگار صابریان",
+        "دانشمند و معاون ارشد لیفت"
+      ],
+      "publishedAt": "2026-10-02T06:11:55.000Z",
+      "durationRaw": "1:36:22",
+      "durationSeconds": 5782,
+      "pageUrl": "https://shows.acast.com/tabaghe16/episodes/ep-210",
+      "acastEpisodeUrl": "ep-210",
+      "audioUrl": "https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/6abe3cfe56d8e12f0925a72a/media.mp3",
+      "audioBytes": 148629537,
+      "audioType": "audio/mpeg",
+      "imageUrl": "https://assets.pippa.io/shows/625bd31dc030a00012e0dba7/1790920317955-ded4c3a4-78b1-4d86-959e-9d8b59925cd1.jpeg",
+      "descriptionExcerpt": "نگار صابریان از مدیران ارشد شرکت Lyft، یکی از بزرگ‌ترین پلتفرم‌های تاکسی اینترنتی در آمریکاست. با پس‌زمینه‌ی مهندسی صنایع و ریاضی، سال‌هاست که در حوزه‌ی علم داده، تحقیق در عملیات و بهینه‌سازی فعالیت می‌کنه. […] 00:00‌ مقدمه 04:12‌ مسیر نگار تا Lyft 14:26‌ تحصیل، مهاجرت و شروع کار در آمریکا حامیان ای…",
+      "hasChapterTimestamps": true,
+      "sponsorMention": true,
+      "note": "chapter style 3: ZWNJ separator"
+    },
+    {
+      "guid": "68aef5cae09d6b0865be1c48",
+      "episodeNo": 190,
+      "season": null,
+      "title": "فراتر از استارتاپ | مهراد هیدن، سعید رحمانی، سهیل",
+      "titleParts": [
+        "فراتر از استارتاپ",
+        "مهراد هیدن، سعید رحمانی، سهیل"
+      ],
+      "publishedAt": "2025-08-28T13:28:49.000Z",
+      "durationRaw": "1:43:03",
+      "durationSeconds": 6183,
+      "pageUrl": "https://shows.acast.com/tabaghe16/episodes/ep-190",
+      "acastEpisodeUrl": "ep-190",
+      "audioUrl": "https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/68aef5cae09d6b0865be1c48/media.mp3",
+      "audioBytes": 123670560,
+      "audioType": "audio/mpeg",
+      "imageUrl": "https://assets.pippa.io/shows/625bd31dc030a00012e0dba7/1756298266427-dcd4c37e-9dd2-4205-b7af-2e2344ed85b4.jpeg",
+      "descriptionExcerpt": "بعضی وقتا بهترین حرفا وقتی پیش میاد که هیچ قصد و برنامه‌ای نداری. این اپیزود هم دقیقاً همین‌طوری شکل گرفت. من، مهراد هیدن و سعید رحمانی توی لندن دور هم جمع شدیم فقط برای یه شب خودمونی. قصدمون فقط دیدار و حال‌و‌احوال بود، اما آخر سر میکروفون روشن شد و نتیجه‌ش همین گفت‌وگویی شد که الان دارین می‌شنوین.…",
+      "hasChapterTimestamps": true,
+      "sponsorMention": false,
+      "note": "multi-guest special, duplicate itunes:episode 190, no EP prefix"
+    },
+    {
+      "guid": "6a6b1f092a5f0f30725584cc",
+      "episodeNo": 203,
+      "season": null,
+      "title": "EP 203 - [English] Inside Shopify's Product DNA | Product VP of Shopify",
+      "titleParts": [
+        "EP 203 - [English] Inside Shopify's Product DNA",
+        "Product VP of Shopify"
+      ],
+      "publishedAt": "2026-07-31T13:07:47.000Z",
+      "durationRaw": "1:38:33",
+      "durationSeconds": 5913,
+      "pageUrl": "https://shows.acast.com/tabaghe16/episodes/brandon-chu",
+      "acastEpisodeUrl": "brandon-chu",
+      "audioUrl": "https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/6a6b1f092a5f0f30725584cc/media.mp3",
+      "audioBytes": 94620943,
+      "audioType": "audio/mpeg",
+      "imageUrl": "https://assets.pippa.io/shows/625bd31dc030a00012e0dba7/1785502998840-186ea7b1-40db-4e8d-a8ab-e4c83b281c1d.jpeg",
+      "descriptionExcerpt": "📌 توجه برای شنوندگان فارسی‌زبان: […] 0:00 Intro 2:30 Life After Leaving Shopify 4:00 From FreshBooks to Shopify https://linktr.ee/tabaghe16 Hosted on Acast. See acast.com/privacy for more information.",
+      "hasChapterTimestamps": true,
+      "sponsorMention": false,
+      "note": "CDATA title containing nested [English] brackets"
+    },
+    {
+      "guid": "66a3ce6230d20f0a5fe87541",
+      "episodeNo": null,
+      "season": null,
+      "title": "Episode 145 - Masoud Shahmoradi | داستان موفقیت فروشگاه اینترنتی خانومی",
+      "titleParts": [
+        "Episode 145 - Masoud Shahmoradi",
+        "داستان موفقیت فروشگاه اینترنتی خانومی"
+      ],
+      "publishedAt": "2024-07-26T16:30:21.000Z",
+      "durationRaw": "2:03:48",
+      "durationSeconds": 7428,
+      "pageUrl": "https://shows.acast.com/tabaghe16/episodes/ep-145-masoud-shahmoradi",
+      "acastEpisodeUrl": "ep-145-masoud-shahmoradi",
+      "audioUrl": "https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/66a3ce6230d20f0a5fe87541/media.mp3",
+      "audioBytes": 118856493,
+      "audioType": "audio/mpeg",
+      "imageUrl": "https://assets.pippa.io/shows/625bd31dc030a00012e0dba7/1722011178106-278fc021f21b0ed89e1b529017071555.jpeg",
+      "descriptionExcerpt": "در این قسمت، با مسعود شاهمرادی، بنیان‌گذار و مدیرعامل خانومی، درباره مسیر ساخت یکی از پیشروترین پلتفرم‌های تجارت الکترونیک در ایران گفتگو کردم. درباره چالش‌های صنعت زیبایی و مراقبت از پوست، اهمیت نوآوری مشتری‌محور و دیدگاه مسعود برای آینده خرید آنلاین در ایران صحبت کردیم. […] اسپانسر این قسمت Everyw…",
+      "hasChapterTimestamps": false,
+      "sponsorMention": true,
+      "note": "missing itunes:episode (\"Episode 145\")"
+    },
+    {
+      "guid": "ca748a5e-6cb9-4253-8a2b-48235c27ab55",
+      "episodeNo": 1,
+      "season": 1,
+      "title": "Episode 1 - Mohsen Malayeri محسن ملایری",
+      "titleParts": [
+        "Episode 1 - Mohsen Malayeri محسن ملایری"
+      ],
+      "publishedAt": "2020-07-07T13:22:37.000Z",
+      "durationRaw": "1:20:37",
+      "durationSeconds": 4837,
+      "pageUrl": "https://anchor.fm/soheil-alavi/episodes/Episode-1---Mohsen-Malayeri-egdult",
+      "acastEpisodeUrl": null,
+      "audioUrl": "https://sphinx.acast.com/p/open/s/625bd31dc030a00012e0dba7/e/ca748a5e-6cb9-4253-8a2b-48235c27ab55/media.mp3",
+      "audioBytes": 78233179,
+      "audioType": "audio/mpeg",
+      "imageUrl": "https://assets.pippa.io/shows/625bd31dc030a00012e0dba7/show-cover.jpg",
+      "descriptionExcerpt": "Mohsen is a co-founder of Tribe. a founding partner of Avatech that was recognized as top ten seed-investor and accelerator in the Middle East by Gust. Mohsen has been a key speaker at StartupTurkey, TEDx, StartupGrind and his works have been featured on Forbes, NPR, Guardian, and a16z. Hosted on Ac…",
+      "hasChapterTimestamps": false,
+      "sponsorMention": false,
+      "note": "oldest item (Episode 1, 2020), legacy anchor.fm link, has itunes:season"
+    }
+  ]
+}

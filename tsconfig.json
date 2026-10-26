@@ -1,0 +1,17 @@
+{
+  "extends": "$app/tsconfig",
+  "include": ["src", "test", "tests", "*"],
+  "exclude": ["src/service-worker"],
+  "compilerOptions": {
+    // The only authored options the generated parent does not already set:
+    // full strict type-checking, source maps for stack traces during dev, and
+    // the ambient environment for a Vite client and a Node toolchain.
+    "strict": true,
+    "sourceMap": true,
+    "types": ["vite/client", "node", "$app/types"],
+    "paths": {
+      "#lib": ["./src/lib"],
+      "#lib/*": ["./src/lib/*"]
+    }
+  }
+}

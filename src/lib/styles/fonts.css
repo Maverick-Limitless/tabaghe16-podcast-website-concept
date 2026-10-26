@@ -1,0 +1,26 @@
+/**
+ * Self-hosted Persian-first type system (docs/DESIGN.md §3).
+ *
+ * Three families, each from a maintained @fontsource package at a pinned
+ * version (SIL Open Font License 1.1 — see licenses/fonts-*.txt):
+ *
+ *   - Estedad Variable      display   (arabic + latin subsets)
+ *   - Vazirmatn Variable    body + UI (arabic + latin subsets)
+ *   - IBM Plex Mono         utility   (latin subset, 400 + 500)
+ *
+ * The variable entries import every subset the package ships; browsers only
+ * download a subset file when rendered text actually falls inside its
+ * `unicode-range`, so Persian pages pull the Arabic file and nothing else.
+ * First-view woff2 payload with the rendered subsets is ~190 KB, inside the
+ * ≤ 350 KB budget in DESIGN.md §3.1.
+ *
+ * System fallback (used before the webfonts arrive, and if they fail to load):
+ * Tahoma for Persian — it ships with every Windows and macOS system and has
+ * full Arabic-script coverage — then the platform UI face, then a generic
+ * sans-serif. No third-party font request is ever made (CSP `font-src 'self'`).
+ */
+
+@import "@fontsource-variable/estedad/wght.css";
+@import "@fontsource-variable/vazirmatn/wght.css";
+@import "@fontsource/ibm-plex-mono/latin-400.css";
+@import "@fontsource/ibm-plex-mono/latin-500.css";

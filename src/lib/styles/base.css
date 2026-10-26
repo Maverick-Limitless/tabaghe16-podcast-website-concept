@@ -1,0 +1,330 @@
+/**
+ * Base layer — RTL-first document defaults, typography, focus visibility, the
+ * skip link, and reduced-motion handling (docs/DESIGN.md §3.3, §6; PRD §10).
+ *
+ * Rules encoded here, from the approved design specification:
+ *  - Right-to-left is structural: `<html dir="rtl">` drives layout; CSS uses
+ *    logical properties (inline-start/end, padding-inline) so nothing has to
+ *    be mirrored by hand.
+ *  - No letter-spacing is ever set on Persian text (§3.3-1). Letter-spacing
+ *    appears only inside isolated Latin mono runs.
+ *  - Focus is always visible: a 2px ink ring with a 2px offset, switching to
+ *    paper on ink surfaces so it is never invisible against a dark band.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* -- Headings ------------------------------------------------------------ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: var(--font-display);
+}
+
+h1 {
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--fs-title);
+  line-height: var(--lh-title);
+  font-weight: 600;
+}
+
+h3,
+h4 {
+  font-size: var(--fs-body-s);
+  line-height: var(--lh-body-s);
+  font-weight: 500;
+  font-family: var(--font-body);
+}
+
+h5,
+h6 {
+  font-size: var(--fs-label);
+  line-height: var(--lh-label);
+  font-weight: 500;
+  font-family: var(--font-body);
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-inline-start: var(--sp-5);
+}
+
+li {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+/* -- Links --------------------------------------------------------------- */
+
+a {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25em;
+  text-decoration-color: var(--stone);
+}
+
+a:hover {
+  text-decoration-color: currentColor;
+}
+
+/* Media never overflows its container; sizing comes from explicit
+   width/height attributes at the call site (PRD §11.2). */
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* -- Focus: always visible, never clipped away --------------------------- */
+
+:focus-visible {
+  outline: var(--focus-ring) solid var(--ink);
+  outline-offset: var(--focus-offset);
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* On ink and graphite surfaces the ring becomes paper so it stays visible. */
+.on-ink :focus-visible,
+.on-ink:focus-visible {
+  outline-color: var(--paper);
+}
+
+/* -- Skip link ----------------------------------------------------------- */
+
+.skip-link {
+  position: fixed;
+  inset-block-start: var(--sp-2);
+  inset-inline-start: var(--sp-4);
+  z-index: var(--z-skip);
+  padding: var(--sp-2) var(--sp-4);
+  border-radius: var(--r-control);
+  background-color: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-body);
+  font-size: var(--fs-label);
+  font-weight: 500;
+  line-height: var(--lh-label);
+  text-decoration: none;
+  transform: translateY(calc(-100% - var(--sp-4)));
+  transition: transform var(--dur-fast) var(--ease-out-soft);
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+  outline-color: var(--paper);
+}
+
+/* -- Utilities ----------------------------------------------------------- */
+
+.container {
+  width: 100%;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.prose {
+  max-width: var(--prose-max);
+}
+
+/*
+ * Prose content model: the sanitized episode description and the written
+ * pages (about, partnerships, privacy) render through this one set of
+ * element styles, so no page re-invents paragraph rhythm or list indents.
+ * The allowed set is exactly the sanitizer's allowlist (extract/sanitize.ts).
+ */
+.prose > * + * {
+  margin-block-start: var(--sp-4);
+}
+
+.prose a {
+  color: var(--ink);
+  text-decoration-color: var(--stone);
+}
+
+.prose a:hover {
+  text-decoration-color: currentColor;
+}
+
+.prose ul,
+.prose ol {
+  display: grid;
+  gap: var(--sp-2);
+  padding-inline-start: var(--sp-5);
+}
+
+.prose li + li {
+  margin-block-start: var(--sp-1);
+}
+
+.prose blockquote {
+  padding-inline-start: var(--sp-4);
+  border-inline-start: 2px solid var(--stone);
+  color: var(--muted);
+}
+
+/* -- Folio label (DESIGN.md §3.3-1) -------------------------------------- */
+
+/*
+ * The section label system. Letter-spacing is impossible in Persian (it
+ * breaks the joins), so a label speaks through weight (500), size (13px),
+ * colour (--muted), and a hairline rule running from the label to the
+ * section's far edge. One class for every page — home, archive, detail,
+ * written pages.
+ */
+.folio-label {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  /* The hairline must reach the section's far edge, so the label stretches
+     even when its container aligns items to the start. */
+  justify-self: stretch;
+  font-family: var(--font-body);
+  font-size: var(--fs-label);
+  font-weight: 500;
+  line-height: var(--lh-label);
+  color: var(--muted);
+}
+
+.folio-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--stone);
+}
+
+/* -- Audio element ------------------------------------------------------- */
+
+/*
+ * The player's audio element carries no visual chrome of its own — every
+ * control is the custom, labeled interface — but it must stay renderable so
+ * the browser keeps it alive. Clipped, not display:none (some mobile
+ * browsers stop a display:none media element).
+ */
+.audio-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* -- Archive color-in (DESIGN.md §4) -------------------------------------- */
+
+/*
+ * The present-tense rule applied to the archive: card and row media rest in
+ * print monochrome and regain source color when the row is approached by a
+ * fine pointer (or focused by keyboard — the same affordance, no hover
+ * required). Touch devices keep the print resting state: there is no hover
+ * to earn the color with. These rules live in the base layer because the
+ * media lives in a child component while the hover target is the parent.
+ */
+@media (hover: hover) and (pointer: fine) {
+  .episode-card .art__img--loaded,
+  .episode-row .art__img--loaded {
+    transition:
+      filter var(--dur-fast) var(--ease-out-soft),
+      opacity var(--dur-std) var(--ease-out-soft);
+  }
+
+  .episode-card:hover .art__img--loaded,
+  .episode-row:hover .art__img--loaded,
+  .episode-card:focus-within .art__img--loaded,
+  .episode-row:focus-within .art__img--loaded {
+    filter: none;
+  }
+}
+
+/* Latin-only runs (timestamps, durations, URLs, Latin names) are isolated
+   from the surrounding Persian text by this class when a <bdi> element is
+   not available. */
+.ltr-run {
+  font-family: var(--font-mono);
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.selection-ink::selection {
+  background-color: var(--ink);
+  color: var(--paper);
+}
+
+/* -- Reduced motion: state changes stay, travel stops -------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
