@@ -3,7 +3,7 @@
    * Guest directory — docs/ARCHITECTURE.md §9.5.
    *
    * Typographic only. The feed provides no guest portraits, so there is no
-   * portrait anywhere in the system and none is invented (PRD §6.7).
+   * portrait anywhere in the system and none is invented (no invented taxonomies).
    */
 
   import type { PageServerData } from "./$types";

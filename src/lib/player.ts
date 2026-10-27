@@ -1,6 +1,6 @@
 /**
  * Playback state — the one player model shared by the listen band, the
- * chapters, and the mini-player (docs/DESIGN.md §5.5, §5.6).
+ * chapters, and the mini-player (the episode-detail composition, §5.6).
  *
  * A page creates the state object with `$state` and hands it to the audio
  * element's bindings and to every player component, so play/pause, the
@@ -8,7 +8,7 @@
  * is plain data: no store, no context — the detail page is the only surface
  * that plays media in v1.
  *
- * Playback never autostarts (PRD §5.5): the audio element is created with
+ * Playback never autostarts (audio behavior): the audio element is created with
  * `preload="none"` and only the user's own press starts it.
  */
 
@@ -111,7 +111,7 @@ export function audioBindings(node: HTMLAudioElement, state: PlayerState): { des
  * Seek the shared element to a chapter stamp.
  *
  * The seek happens only after metadata is available and the target is inside
- * the media duration (DESIGN.md §5.5, PRD §5.4): a stamp beyond the duration
+ * the media duration (the episode-detail composition, chapters only from source metadata): a stamp beyond the duration
  * is a data error, and clamping it to the end would silently lie. Returns
  * whether the seek was applied, so the caller can count it as "played".
  */
@@ -141,7 +141,7 @@ export function seekTo(audio: HTMLAudioElement | null, seconds: number): boolean
  * `preload="none"` means the element has no duration until something asks
  * for it, so the first chapter press requests just the metadata
  * (kilobytes, not the media), and the seek happens the moment it arrives —
- * still "only after metadata is available", per PRD §5.4, but without making
+ * still "only after metadata is available", per chapters only from source metadata, but without making
  * the visitor press play first to learn where a chapter begins. A press that
  * arrives before the metadata is answered is ignored so a second press
  * cannot queue two seeks.

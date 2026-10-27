@@ -7,7 +7,7 @@
  * `skippedInvalid` and logged with its GUID; one bad item never aborts the run.
  *
  * Every field is copied from the feed, derived by a §6 rule, or `null`.
- * Nothing is invented to fill a gap (PRD §1.4, §5.1).
+ * Nothing is invented to fill a gap (no invented content, §5.1).
  */
 
 import { ENCLOSURE_HOST, ENCLOSURE_PATH_PATTERN, IMAGE_HOST, ITEM_LINK_HOSTS } from "../config";
@@ -254,7 +254,7 @@ function acastPageUrlOrNull(item: RawFeedItem): string | null {
  * The stored fields that may change on a re-sync. `slug`, identity, and
  * first-seen data are excluded: a re-run that changes nothing but `lastSeenAt`
  * must not count as an update, and an episode's identity is preserved even when
- * its title is edited upstream (PRD §5.3).
+ * its title is edited upstream (sync safety).
  */
 export function changedFields(previous: Episode, next: Episode): string[] {
   const changed: string[] = [];

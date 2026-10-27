@@ -3,7 +3,7 @@
  *
  * One shared normalizer is used everywhere the project compares or matches
  * Persian and Latin text: the §6.1 guest gate, slug building, and the client
- * search index (PRD §5.6). Having a single implementation is what makes
+ * search index (deterministic search). Having a single implementation is what makes
  * "Persian and Latin queries behave identically" true by construction rather
  * than by convention in five separate call sites.
  *

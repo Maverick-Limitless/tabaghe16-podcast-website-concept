@@ -1,11 +1,11 @@
 /**
- * `use:wave` — the fabric-wave press action (docs/DESIGN.md §6, "Origin rules").
+ * `use:wave` — the fabric-wave press action (the fabric-wave press, "Origin rules").
  *
  * Writes the contact point as percentages (--wx/--wy) on pointerdown, holds
  * `.is-pressing` while the membrane is down, then swaps to `.is-settling` on
  * release so the spring recovery runs from the pressed scale. Keyboard
  * activation (Enter/Space) uses the center origin and the exact same phases,
- * so both input paths are equally legible (PRD §7.1.4).
+ * so both input paths are equally legible (keyboard activation uses the center origin).
  *
  * The action is enhancement only: without it, CSS `:active` still gives the
  * instant depress and a static center sheen (wave.css). A second concurrent

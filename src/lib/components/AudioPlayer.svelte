@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * The listen band's player (docs/DESIGN.md §5.5, §5.6; PRD §5.5).
+   * The listen band's player (the episode-detail composition, §5.6; audio behavior).
    *
    * A real player over the episode's verified enclosure URL: play/pause,
    * seek, current time, duration, buffering, and a real error state with the
@@ -29,7 +29,7 @@
     /** The element the page renders; null before mount and on failure mount. */
     audioElement: HTMLAudioElement | null;
     fallbackLinks: readonly PlatformFallback[];
-    /** The now-playing line beside the control (DESIGN.md §5.5). */
+    /** The now-playing line beside the control (the episode-detail composition). */
     title: string;
     byline: string | null;
   }
@@ -112,7 +112,7 @@
       <!--
         The now-playing line: the episode's own headline and guest, so the
         band identifies what is loaded even when the visitor arrived from
-        search (DESIGN.md §5.5). The live status for assistive tech is a
+        search (the episode-detail composition). The live status for assistive tech is a
         separate polite region below the clock.
       -->
       <p class="listen-player__now">
@@ -188,7 +188,7 @@
     justify-content: center;
     direction: ltr;
     unicode-bidi: isolate;
-    /* Non-directional glyph: never mirrored (DESIGN.md §3.3-5). */
+    /* Non-directional glyph: never mirrored (the Persian typographic rules-5). */
   }
 
   .listen-player__dots {
@@ -341,7 +341,7 @@
     border-radius: var(--r-chip);
     /*
      * The fill is the accent — a >=3px non-text fill, always alongside the
-     * digit clock so state is never color alone (DESIGN.md §2.1).
+     * digit clock so state is never color alone (the color rules).
      */
     background: linear-gradient(
       to left,

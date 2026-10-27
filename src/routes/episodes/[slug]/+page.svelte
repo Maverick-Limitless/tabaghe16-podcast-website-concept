@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * Episode detail — docs/DESIGN.md §5.5 (desktop) and §5.6 (mobile).
+   * Episode detail — the episode-detail composition (desktop) and §5.6 (mobile).
    *
    * The page's single job: take a visitor from "that conversation with person
    * Y about X" to hearing it at the right minute. The listen band is the
@@ -59,7 +59,7 @@
   {#if data.episode.imageUrl !== null}
     <meta property="og:image" content={data.episode.imageUrl} />
   {/if}
-  <!-- Structured data from verified fields only (PRD §11.2); the loader
+  <!-- Structured data from verified fields only (performance); the loader
        serializes it so the object never enters the client bundle. The
        ignore keeps the formatter from reading the interpolated script
        content as JavaScript. -->
@@ -155,7 +155,7 @@
       One element, three readers. preload="none" means nothing is fetched
       until the visitor's own press; the enclosure URL resolves its redirect
       per playback request inside the browser's media stack, and the resolved
-      signed URL is never cached (DESIGN.md §9.7).
+      signed URL is never cached (the media playback constraints).
     -->
     <audio
       bind:this={audioElement}
@@ -369,7 +369,7 @@
 
   /*
    * Platform links are quiet text links with the external glyph — never
-   * buttons-sized rivals to the play control (DESIGN.md §5.5). The video
+   * buttons-sized rivals to the play control (the episode-detail composition). The video
    * action joins this row only for episodes with a verified per-episode
    * video link, which the loader knows.
    */
@@ -408,7 +408,7 @@
 
   /*
    * The share confirmation is a status region: announced politely, never
-   * stealing focus, cleared after a comfortable reading time (DESIGN.md §7).
+   * stealing focus, cleared after a comfortable reading time (the copy direction).
    */
   .listen-band__share-live {
     font-size: var(--fs-meta);
@@ -557,7 +557,7 @@
     line-height: var(--lh-body-s);
   }
 
-  /* The transparent reason (DESIGN.md §7 "Related"): a chip, not a score. */
+  /* The transparent reason (the copy direction "Related"): a chip, not a score. */
   .related-list__reason {
     justify-self: start;
     padding: 2px var(--sp-3);

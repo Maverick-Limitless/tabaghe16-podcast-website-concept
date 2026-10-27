@@ -1,5 +1,5 @@
 /**
- * The local media fixture shared by the E2E specs (PRD §13.3: fixture-based
+ * The local media fixture shared by the E2E specs (end-to-end testing: fixture-based
  * playback, clearly distinguished from live external media).
  *
  * A silent PCM WAV served from the enclosure's URL: the browser's media

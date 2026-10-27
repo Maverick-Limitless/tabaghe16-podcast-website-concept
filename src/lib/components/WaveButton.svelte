@@ -1,15 +1,15 @@
 <script lang="ts">
   /**
-   * The signature control — «موجِ زیر فرش» (docs/DESIGN.md §6).
+   * The signature control — «موجِ زیر فرش» (the fabric-wave press).
    *
    * Renders a link when `href` is given and a button otherwise, so one
    * component covers every wave surface (hero CTA, archive CTA, the listen
    * band's play control, the share control) with the same motion system.
    * Rationed on purpose: the wave belongs to primary CTAs and play controls
-   * only (DESIGN.md §6 "Constraints") — links, chips and rows keep their
+   * only (the fabric-wave press "Constraints") — links, chips and rows keep their
    * micro states.
    *
-   * States (PRD §7.1.6): hover, focus-visible (the base layer's ink ring),
+   * Every state is designed: hover, focus-visible (the base layer's ink ring),
    * active (the wave), disabled (a real state, never a decorative control),
    * and pending — the label swaps, the width is preserved, no wave runs.
    */

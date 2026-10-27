@@ -107,14 +107,39 @@ export interface SiteMeta {
   readonly status: DataStatus;
 }
 
-async function readValidated<T>(
+/**
+ * Read a store file from the resolved store directory (live or demo).
+ */
+async function readStoreFile<T>(
   relativePath: string,
+  parse: (value: unknown) => T,
+  fallback: () => T
+): Promise<T> {
+  return readFrom(join(STORE_DIR, relativePath), parse, fallback);
+}
+
+/**
+ * Read an editor-curated file from the data root. Topics and overrides are
+ * human-curated and shared by both modes: sync never writes them, and the
+ * demo store does not carry copies, so a curator's file applies in demo and
+ * live mode alike.
+ */
+async function readCuratedFile<T>(
+  relativePath: string,
+  parse: (value: unknown) => T,
+  fallback: () => T
+): Promise<T> {
+  return readFrom(join(DATA_DIR, relativePath), parse, fallback);
+}
+
+async function readFrom<T>(
+  path: string,
   parse: (value: unknown) => T,
   fallback: () => T
 ): Promise<T> {
   let raw: string;
   try {
-    raw = await readFile(join(STORE_DIR, relativePath), "utf8");
+    raw = await readFile(path, "utf8");
   } catch {
     return fallback();
   }
@@ -123,16 +148,14 @@ async function readValidated<T>(
   try {
     parsed = JSON.parse(raw) as unknown;
   } catch (cause) {
-    throw new Error(`data/${relativePath} is not valid JSON`, { cause });
+    throw new Error(`${path} is not valid JSON`, { cause });
   }
 
   try {
     return parse(parsed);
   } catch (cause) {
     throw new Error(
-      `data/${relativePath} failed schema validation: ${
-        cause instanceof Error ? cause.message : String(cause)
-      }`,
+      `${path} failed schema validation: ${cause instanceof Error ? cause.message : String(cause)}`,
       { cause }
     );
   }
@@ -140,13 +163,11 @@ async function readValidated<T>(
 
 export async function loadStore(): Promise<Store> {
   const [episodes, people, topics, overrides, syncRun] = await Promise.all([
-    // STORE_DIR is the store directory itself (live or demo), so the
-    // relative paths carry no store/ prefix.
-    readValidated("episodes.json", EpisodeStoreSchema.parse, () => []),
-    readValidated("people.json", PersonStoreSchema.parse, () => []),
-    readValidated("topics.json", TopicStoreSchema.parse, () => []),
-    readValidated("overrides.json", OverrideStoreSchema.parse, () => ({})),
-    readValidated("sync-run.json", SyncRunSchema.parse, () => null)
+    readStoreFile("episodes.json", EpisodeStoreSchema.parse, () => []),
+    readStoreFile("people.json", PersonStoreSchema.parse, () => []),
+    readCuratedFile("topics.json", TopicStoreSchema.parse, () => []),
+    readCuratedFile("overrides.json", OverrideStoreSchema.parse, () => ({})),
+    readStoreFile("sync-run.json", SyncRunSchema.parse, () => null)
   ]);
 
   return { episodes, people, topics, overrides, syncRun };

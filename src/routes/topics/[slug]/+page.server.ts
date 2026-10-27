@@ -3,7 +3,7 @@
  *
  * Topics are an editor-curated deterministic list in `data/topics.json`,
  * attached to episodes by GUID. The route renders the curated set as-is: no
- * keyword mining, no inferred membership (PRD §6.7 "not invented
+ * keyword mining, no inferred membership (no invented taxonomies "not invented
  * taxonomies"). An unknown slug 404s like any other.
  */
 

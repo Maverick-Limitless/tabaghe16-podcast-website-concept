@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * Archive — docs/DESIGN.md §5.3 (desktop), §5.4 (mobile), §7 (states).
+   * Archive — the archive row model (desktop), §5.4 (mobile), §7 (states).
    *
    * Search-first, chronology-spined: the sticky bar carries the query and
    * the sort, the year and chapters filters sit beneath it as chips, and
@@ -11,7 +11,7 @@
    * load-more all run over that data without a round-trip. The route is
    * prerendered, so a shared ?q=… URL seeds its state on the client at
    * mount (a static build has one canonical archive; the filter
-   * combinations stay non-crawlable by design, PRD §11.2), and from there
+   * combinations stay non-crawlable by design, performance), and from there
    * the state leads while the URL follows through shallow routing.
    */
 
@@ -103,7 +103,7 @@
   }
 
   /**
-   * Keep the URL shareable (PRD §5.6) without a reload: SvelteKit's shallow
+   * Keep the URL shareable (deterministic search) without a reload: SvelteKit's shallow
    * routing updates the address bar and history while this page keeps its
    * data. Empty params drop out of the URL so the clean archive stays
    * canonical.
@@ -144,7 +144,7 @@
   );
 
   // The stale-data banner is the only public sync surface in an admin-less
-  // build (DESIGN.md §5.3, §9.11): shown while the store is older than the
+  // build (the archive row model, §9.11): shown while the store is older than the
   // configured threshold, dismissible for this session.
   let staleDismissed = $state(false);
   const showStale = $derived(data.site.status === "stale" && !staleDismissed);
@@ -336,7 +336,7 @@
     font-weight: 500;
   }
 
-  /* -- The sticky discovery bar (DESIGN.md §5.3) -----------------------------
+  /* -- The sticky discovery bar (the archive row model) -----------------------------
    * Solid paper + hairline, never blur — the two translucent surfaces are
    * the header and the mini-player (§2.5's budget).
    */

@@ -1,16 +1,16 @@
 <script lang="ts">
   /**
-   * Global header — docs/DESIGN.md §5.7.
+   * Global header — the shell.
    *
    * Deliberately minimal and honest: the wordmark is text (no invented brand
    * mark), the primary action only exists when there is a real destination for
    * it, and secondary actions only exist when the underlying data supports
-   * them (PRD §7.4 — no inert controls).
+   * them (no inert controls — no inert controls).
    *
    * Below 641 px the inline nav is replaced by a menu button that opens the
    * drawer: it slides from the start edge (the right, in RTL), moves focus in
    * on open and returns it to the button on close, closes on Esc and on a
-   * scrim press, and traps Tab while open (PRD §10).
+   * scrim press, and traps Tab while open (accessibility).
    */
 
   import { page } from "$app/state";
@@ -49,7 +49,7 @@
       return;
     }
     // A real focus trap: Tab cycles inside the drawer while it is open, so
-    // the page behind never becomes reachable by accident (PRD §10).
+    // the page behind never becomes reachable by accident (accessibility).
     const focusable = drawer.querySelectorAll<HTMLElement>(
       'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
     );
@@ -82,7 +82,7 @@
     });
   });
 
-  // Focus moves into the sheet on open (PRD §10) — the first control, so a
+  // Focus moves into the sheet on open (accessibility) — the first control, so a
   // screen-reader user lands on the navigation itself, not the container.
   $effect(() => {
     if (menuOpen && drawer !== null) {
@@ -169,7 +169,7 @@
   }
 
   /* The one translucent floating surface on the page besides the mini-player
-     (DESIGN.md §2.5 two-surface budget). */
+     (the elevation budget two-surface budget). */
   .site-header__bar {
     display: flex;
     align-items: center;
@@ -254,7 +254,7 @@
 
   .header-action__glyph {
     font-size: 0.75em;
-    /* Play glyph is non-directional: never mirrored in RTL (DESIGN.md §3.3-5). */
+    /* Play glyph is non-directional: never mirrored in RTL (the Persian typographic rules-5). */
     direction: ltr;
     unicode-bidi: isolate;
   }
@@ -295,7 +295,7 @@
   /*
    * Slides from the start edge. The document is RTL (app.html), so
    * inline-start is the right edge: the sheet is pinned there and enters
-   * from beyond the viewport's right edge (DESIGN.md §5.7).
+   * from beyond the viewport's right edge (the shell).
    */
   .drawer {
     position: fixed;

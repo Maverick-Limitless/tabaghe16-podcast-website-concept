@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * Editorial episode card — docs/DESIGN.md §5.1 (recent grid) and §4.
+   * Editorial episode card — the home composition (recent grid) and §4.
    *
    * Renders store fields only: the artwork is the only image source the feed
    * provides, and it renders through the one image process (EpisodeArt) so
@@ -87,7 +87,7 @@
     /*
      * The card's approach state: the border sharpens and the media lifts by
      * two pixels — transform and border only, never a shadow on every card
-     * (DESIGN.md §2.5). Reduced motion drops the lift, keeps the border.
+     * (the elevation budget). Reduced motion drops the lift, keeps the border.
      */
     transition:
       border-color var(--dur-fast) var(--ease-out-soft),

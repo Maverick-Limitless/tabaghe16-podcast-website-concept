@@ -1,12 +1,12 @@
 /**
- * Sponsor extraction — docs/ARCHITECTURE.md §6.4; DESIGN.md §5.5, §9.5.
+ * Sponsor extraction — docs/ARCHITECTURE.md §6.4; audio behavior, §9.5.
  *
  * The sponsor box renders only blocks the rules can validate: one of the
  * two attested source headings, a parseable blurb, and an allowlisted URL.
  * The show's own link hub and the legacy degraded redirectors are in the
  * never-allow set, and a heading with no valid entries is not a sponsor
  * block — the lines fall back into the prose verbatim, attribution intact
- * (PRD §9.2: copy is never rewritten, never silently dropped).
+ * (feed and link security: copy is never rewritten, never silently dropped).
  */
 
 import { describe, expect, it } from "vitest";

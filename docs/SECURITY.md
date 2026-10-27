@@ -44,7 +44,7 @@ This is a public content site with no server runtime, no database, no accounts, 
 | Type-check (`svelte-check`, strict, tests included) | 0 errors, 0 warnings |
 | Lint + format (ESLint + Prettier) | Clean |
 | Unit suite | 81/81 passing, including the XXE/sanitizer/scheme-policy proofs |
-| E2E suite on the production build | Green (59 outright + 1 retry-pass; see `the project's testing record (kept private)`) |
+| E2E suite on the production build | Runs as part of the project's own CI and the documented `npx playwright test` command |
 | Built-output inspection | No `on*` attributes; CSP meta carries the fresh bootstrap hash |
 | Browser console over verified routes | Zero errors, zero CSP violations |
 | Working-tree secret scan | Nothing found |

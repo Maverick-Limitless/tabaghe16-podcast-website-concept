@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * The sticky mini-player (docs/DESIGN.md §5.6).
+   * The sticky mini-player (the mobile composition).
    *
    * Appears only while media is actually playing, keeps playing across
    * scrolling, and is dismissible — it never traps focus, never covers the

@@ -1,5 +1,5 @@
 /**
- * Automated accessibility audit — WCAG 2.2 AA via axe (PRD §10, §13.5).
+ * Automated accessibility audit — WCAG 2.2 AA via axe (accessibility, §13.5).
  *
  * Every public route is analyzed in both projects. The artwork host is
  * blocked, which is the designed fallback state (the number plates) — an

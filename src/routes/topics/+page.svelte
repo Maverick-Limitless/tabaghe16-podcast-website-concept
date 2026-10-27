@@ -4,7 +4,7 @@
    *
    * Editor-curated only, so it stays dormant until a human curates
    * `data/topics.json`. An empty state is honest; a mined taxonomy would be
-   * invented data (PRD §6.7).
+   * invented data (no invented taxonomies).
    */
 
   import type { PageServerData } from "./$types";

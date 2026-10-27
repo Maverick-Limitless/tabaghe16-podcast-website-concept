@@ -1,5 +1,5 @@
 /**
- * Feed parsing — docs/ARCHITECTURE.md §8.2 and §11.1-3 (PRD §5.3, §9.2).
+ * Feed parsing — docs/ARCHITECTURE.md §8.2 and §11.1-3 (sync safety, §9.2).
  *
  * `fast-xml-parser` is configured so that **no entity resolution happens at
  * all**: external entities throw, and internal DOCTYPE entities are never

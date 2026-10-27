@@ -5,7 +5,7 @@
    * Factual show overview, credited to the official sources. Nothing here is
    * estimated: audience figures, episode counts, and platform metadata all
    * change with the feed, so the page describes the show rather than reporting
-   * numbers about it (PRD §2.2, §1.4).
+   * numbers about it (dynamic counts, never hard-coded, §1.4).
    */
 
   import type { PageServerData } from "./$types";

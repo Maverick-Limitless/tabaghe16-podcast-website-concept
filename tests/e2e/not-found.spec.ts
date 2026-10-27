@@ -1,5 +1,5 @@
 /**
- * The not-found journey (PRD §4.2, §13.3): an unknown episode slug or page
+ * The not-found journey (admin safety, §13.3): an unknown episode slug or page
  * must land on the Persian recovery page with real exits — not an empty
  * shell — on both the prerendered fallback and client-side navigation.
  */

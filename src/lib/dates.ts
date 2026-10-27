@@ -1,11 +1,11 @@
 /**
- * Date and time formatting — docs/DESIGN.md §3.3-3.
+ * Date and time formatting — the Persian typographic rules-3.
  *
  * Display dates are Jalali via `Intl.DateTimeFormat('fa-IR')`; the machine
  * Gregorian value is carried alongside in a `<time datetime="…">` attribute so
  * the page is honest for both readers and machines. Durations render as Latin
  * `H:MM:SS` in the mono face, because that is the show's own timestamp
- * vernacular (DESIGN.md §3.1).
+ * vernacular (type families).
  *
  * Formatting is pinned to UTC so a stored ISO timestamp always yields the same
  * calendar day regardless of where the build runs.
@@ -30,7 +30,7 @@ const GREGORIAN_YEAR = new Intl.DateTimeFormat("en-CA", {
 });
 
 /**
- * «شنبه ۲۵ مهر ۱۴۰۵» — long Jalali form, in the order DESIGN.md §3.3-3 shows.
+ * «شنبه ۲۵ مهر ۱۴۰۵» — long Jalali form, in the order the Persian typographic rules-3 shows.
  * The parts are reassembled in that order because ICU's own long format puts
  * the weekday last («۱۴۰۵ مهر ۲۵, شنبه»), which reads wrong in an RTL page.
  */
@@ -74,7 +74,7 @@ export function formatDuration(totalSeconds: number): string {
 }
 
 /**
- * Latin digits to Persian digits (`212` → «۲۱۲») — DESIGN.md §3.3-2.
+ * Latin digits to Persian digits (`212` → «۲۱۲») — the Persian typographic rules-2.
  *
  * Used for counts, episode name-tags, and any editorial figure in Persian
  * prose, which the design specifies in Persian digits. Machine data (stamps,

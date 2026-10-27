@@ -4,7 +4,7 @@
  * This module owns the answer to "is this title fragment the episode's guest?".
  * Everything that could be a name is either confirmed by the episode's own bio
  * anchor or left alone, and a title with no confirmed part renders whole with
- * no person record — which is the conservative outcome PRD §6.7 requires, since
+ * no person record — which is the conservative outcome no invented taxonomies requires, since
  * inventing a guest is worse than showing none.
  */
 

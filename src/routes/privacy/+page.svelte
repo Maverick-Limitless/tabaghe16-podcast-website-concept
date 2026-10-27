@@ -1,6 +1,6 @@
 <script lang="js">
   /**
-   * Privacy notice — PRD §4.1 and §9.4.
+   * Privacy notice — the one aesthetic risk and §9.4.
    *
    * Describes what this build actually does: a static site with no accounts,
    * no analytics, no cookies, and no server that receives visitor data. It

@@ -22,7 +22,7 @@ export default defineConfig(async () => ({
          * Every dynamic route ships an `entries()` from the store, so the
          * only routes the crawler can legitimately fail to reach are the
          * editor-curated collections that are currently empty (topics
-         * ships with an empty list — PRD §6.7 forbids inventing one). An
+         * ships with an empty list — no invented taxonomies forbids inventing one). An
          * unseen /topics/[slug] is the correct outcome: the fallback serves
          * the not-found page when someone types such a URL.
          *

@@ -1,7 +1,7 @@
 /**
  * The episode row view model — one shared shape for every list of episodes
  * (archive, guest pages, search results when they arrive), so no page
- * re-derives labels or re-invents row markup (DESIGN.md §5.3; PRD §8 "no
+ * re-derives labels or re-invents row markup (the archive row model; architecture principles "no
  * duplicate component systems").
  *
  * Labels are formatted here, once, from store fields: the name tag is

@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * Guest profile — docs/DESIGN.md §5.5 "Guest presentation rules".
+   * Guest profile — the episode-detail composition "Guest presentation rules".
    *
    * Typographic by necessity: no verified portrait source exists, so the page
    * carries no image at all rather than an invented one. Bio and role render

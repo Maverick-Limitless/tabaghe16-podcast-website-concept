@@ -1,6 +1,6 @@
 /**
  * Archive discovery — search, filters, sort, load-more, states, and the
- * shareable URL (PRD §5.6, §13.3). All filtering is local over the shipped
+ * shareable URL (deterministic search, §13.3). All filtering is local over the shipped
  * data, so the assertions are deterministic against the committed store.
  */
 

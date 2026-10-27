@@ -1,5 +1,5 @@
 /**
- * Home — the editorial front page against real store data (PRD §13.3).
+ * Home — the editorial front page against real store data (end-to-end testing).
  *
  * The suite never reaches a third-party service: the artwork host is
  * blocked per-test, which is exactly the slow-host condition the plate

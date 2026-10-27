@@ -25,7 +25,7 @@ export const load: LayoutServerLoad = async () => {
   const latest = visibleEpisodes(store)[0] ?? null;
 
   // «موضوع‌ها» appears only when a curated topic list exists and «مهمان‌ها»
-  // only when verified guest data supports it (DESIGN.md §5.7). Both are
+  // only when verified guest data supports it (the shell). Both are
   // absent in an unsynchronized store, so the nav renders without them.
   const nav: NavItem[] = [
     { href: "/episodes", label: "قسمت‌ها" },

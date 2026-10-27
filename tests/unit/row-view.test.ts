@@ -1,5 +1,5 @@
 /**
- * The row view model — docs/DESIGN.md §5.3, §3.3.
+ * The row view model — sync safety, §3.3.
  *
  * Every label a list renders is derived here, once, from store fields: the
  * name tag appears only when the source numbered the episode (numbers are

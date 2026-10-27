@@ -1,5 +1,5 @@
 /**
- * Search normalization — docs/DESIGN.md §5.6, PRD §5.6.
+ * Search normalization — deterministic search, deterministic search
  *
  * The archive's search is a plain substring match over text both sides
  * normalize with one function. These tests pin the folds the feed actually

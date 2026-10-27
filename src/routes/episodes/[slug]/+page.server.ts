@@ -1,14 +1,14 @@
 /**
- * Episode detail data — docs/ARCHITECTURE.md §9.1, §10.2; DESIGN.md §5.5–5.6.
+ * Episode detail data — docs/ARCHITECTURE.md §9.1, §10.2; the episode-detail composition–5.6.
  *
  * One page, one job: take a visitor from "that conversation with person Y
  * about X" to hearing it at the right minute. Everything the view renders is
  * either a store field, a derived selection with a stated rule, or absent —
- * the loader never fills a gap with invented content (PRD §1.4).
+ * the loader never fills a gap with invented content (no invented content).
  *
  * Related episodes follow transparent rules, surfaced per row so the page can
  * state them: shared guests first (the strongest verified signal), then the
- * archive's own chronology — never an opaque score (DESIGN.md §7 "Related").
+ * archive's own chronology — never an opaque score (the copy direction "Related").
  */
 
 import { error } from "@sveltejs/kit";
@@ -23,7 +23,7 @@ export const prerender = true;
 
 /**
  * Every visible episode gets a prerendered page — the whole archive is
- * server-rendered HTML with no client API call (PRD §11.1). A slug outside
+ * server-rendered HTML with no client API call (server-rendered for crawlers). A slug outside
  * this list serves the not-found page, which the static adapter emits as
  * the shared 404 fallback.
  */
@@ -81,7 +81,7 @@ export const load: PageServerLoad = async ({ params }) => {
 
   const url = `${getOrigin()}/episodes/${episode!.slug}`;
 
-  // Structured data only from fields the page genuinely carries (PRD §11.2);
+  // Structured data only from fields the page genuinely carries (performance);
   // serialized here so the object never enters the client bundle.
   const structured = {
     "@context": "https://schema.org",

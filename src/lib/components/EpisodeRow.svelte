@@ -2,7 +2,7 @@
   /**
    * The episode row — the archive's chronological row, extracted so the
    * archive, the guest pages, and every future list render one row system
-   * (DESIGN.md §5.3 "Row interaction model").
+   * (the archive row model "Row interaction model").
    *
    * Two real actions per row, zero nesting: the headline is an <a> stretched
    * over the row by a ::after overlay, and the play affordance is a separate
@@ -10,7 +10,7 @@
    * neither inert, neither invalid.
    *
    * The mono thumb is the row's print texture: the archive as a table of
-   * contents for conversations (DESIGN.md §1, §4), with the designed plate
+   * contents for conversations (design thesis, §4), with the designed plate
    * underneath so the index never shows a blank frame.
    */
 

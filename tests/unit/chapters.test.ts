@@ -5,7 +5,7 @@
  *
  * Every rule here is a data-integrity rule: a chapter line that cannot be
  * verified stays in the prose verbatim rather than becoming a mangled
- * chapter (PRD §5.4 — never invent chapter labels or times).
+ * chapter (chapters only from source metadata — never invent chapter labels or times).
  */
 
 import { describe, expect, it } from "vitest";

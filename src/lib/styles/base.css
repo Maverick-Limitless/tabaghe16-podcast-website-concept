@@ -1,6 +1,6 @@
 /**
  * Base layer — RTL-first document defaults, typography, focus visibility, the
- * skip link, and reduced-motion handling (docs/DESIGN.md §3.3, §6; PRD §10).
+ * skip link, and reduced-motion handling (the Persian typographic rules, §6; accessibility).
  *
  * Rules encoded here, from the approved design specification:
  *  - Right-to-left is structural: `<html dir="rtl">` drives layout; CSS uses
@@ -105,7 +105,7 @@ a:hover {
 }
 
 /* Media never overflows its container; sizing comes from explicit
-   width/height attributes at the call site (PRD §11.2). */
+   width/height attributes at the call site (performance). */
 
 img,
 svg,
@@ -225,7 +225,7 @@ button:disabled {
   color: var(--muted);
 }
 
-/* -- Folio label (DESIGN.md §3.3-1) -------------------------------------- */
+/* -- Folio label (the Persian typographic rules-1) -------------------------------------- */
 
 /*
  * The section label system. Letter-spacing is impossible in Persian (it
@@ -276,7 +276,7 @@ button:disabled {
   border: 0;
 }
 
-/* -- Archive color-in (DESIGN.md §4) -------------------------------------- */
+/* -- Archive color-in (IA and routes) -------------------------------------- */
 
 /*
  * The present-tense rule applied to the archive: card and row media rest in

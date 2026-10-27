@@ -1,5 +1,5 @@
 /**
- * HTML sanitization — docs/ARCHITECTURE.md §6.5 (PRD §9.2).
+ * HTML sanitization — docs/ARCHITECTURE.md §6.5 (feed and link security).
  *
  * Feed descriptions are third-party CDATA HTML. They reach the page only after
  * passing through `sanitize-html` with a narrow allowlist:
@@ -43,7 +43,7 @@ const ALLOWED_URL_SCHEMES: readonly string[] = ["https", "mailto"];
  * `rel` and `target` are listed because the transform below writes them and
  * sanitize-html filters transformed attributes against this allowlist too —
  * without the listing, every link reached the page without its
- * `rel="noopener noreferrer"`, which the link-safety tests pin (PRD §9.2).
+ * `rel="noopener noreferrer"`, which the link-safety tests pin (feed and link security).
  */
 const ALLOWED_ATTRIBUTES: Record<string, string[]> = {
   a: ["href", "rel", "target"]

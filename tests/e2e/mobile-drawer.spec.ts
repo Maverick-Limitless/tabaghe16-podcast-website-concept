@@ -1,5 +1,5 @@
 /**
- * Mobile navigation — the drawer's full behavior contract (PRD §6.7, §10):
+ * Mobile navigation — the drawer's full behavior contract (no invented taxonomies, §10):
  * tactile open, focus moved in and trapped, Esc / scrim / navigation close,
  * and focus returned to the menu button.
  */

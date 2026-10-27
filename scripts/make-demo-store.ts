@@ -125,8 +125,8 @@ async function main(): Promise<void> {
     "utf8"
   );
   await writeFile(join(OUT_DIR, "people.json"), `${JSON.stringify(people, null, 2)}\n`, "utf8");
-  await writeFile(join(OUT_DIR, "topics.json"), `${JSON.stringify([], null, 2)}\n`, "utf8");
-  await writeFile(join(OUT_DIR, "overrides.json"), `${JSON.stringify({}, null, 2)}\n`, "utf8");
+  // Topics and overrides are editor-curated at the data root and shared by
+  // both modes; the demo store carries only the synced-shape records.
 
   const withDescription = demoEpisodes.filter((e) => e.descriptionHtml !== "").length;
   const withArt = demoEpisodes.filter((e) => e.imageUrl !== null).length;

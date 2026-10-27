@@ -1,5 +1,5 @@
 /**
- * HTML sanitization — docs/ARCHITECTURE.md §6.5; PRD §9.2.
+ * HTML sanitization — docs/ARCHITECTURE.md §6.5; feed and link security
  *
  * The allowlist is the entire policy: feed descriptions are third-party
  * CDATA HTML, and these tests pin every edge the policy names — what

@@ -1,5 +1,5 @@
 /**
- * Player chapter logic — docs/DESIGN.md §5.5, PRD §5.4.
+ * Player chapter logic — audio behavior, chapters only from source metadata
  *
  * The active-chapter rule is a pure function over stamps and the play head,
  * and it gates a real UI state (the accent tick and the glyph swap), so its

@@ -5,7 +5,7 @@
  * URL is a constant with no environment or request override — the only
  * alternative input is `--input <local file>`, used by tests and offline
  * review. Keeping that property structural is what makes the SSRF rules of
- * PRD §9.2 hold without runtime machinery.
+ * feed and link security hold without runtime machinery.
  */
 
 /** The official source of truth for episode metadata and audio enclosures. */
@@ -90,7 +90,7 @@ export const SPONSOR_NEVER_ALLOW_HOSTS: readonly string[] = [
  * Platform and social links are hardcoded constants taken from the verified
  * link table in docs/CONTENT_SOURCES.md — never derived from feed text, so a
  * degraded link inside an old description can never reach the rendered page.
- * Persian labels follow docs/DESIGN.md §5.7.
+ * Persian labels follow the shell.
  */
 
 export interface PlatformLink {

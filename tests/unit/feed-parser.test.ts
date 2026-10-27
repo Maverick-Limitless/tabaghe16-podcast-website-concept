@@ -1,5 +1,5 @@
 /**
- * Feed parsing — docs/ARCHITECTURE.md §8.2, §11.1-3; PRD §9.2.
+ * Feed parsing — docs/ARCHITECTURE.md §8.2, §11.1-3; feed and link security
  *
  * The parser's safety property is structural: no entity resolution at all,
  * so both XXE and entity-expansion are removed as failure classes rather

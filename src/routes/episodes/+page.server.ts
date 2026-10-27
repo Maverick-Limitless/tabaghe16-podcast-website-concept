@@ -8,7 +8,7 @@
  *
  * The route is prerendered, so the loader never reads query parameters (a
  * static build has one canonical archive; filter combinations stay
- * non-crawlable by design, PRD §11.2). Search, filters, sort, and load-more
+ * non-crawlable by design, performance). Search, filters, sort, and load-more
  * run client-side over this data: the page seeds its state from the URL at
  * mount, typing never costs a round-trip, and the URL stays shareable
  * through shallow routing.

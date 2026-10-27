@@ -1,13 +1,13 @@
 <script lang="ts">
   /**
-   * Global footer — docs/DESIGN.md §5.7.
+   * Global footer — the shell.
    *
    * The single ink band of the site. Every destination arrives as a prop from
    * the layout's server load, because the verified link table is server-side
    * configuration (docs/ARCHITECTURE.md §8.3) and must not reach the client
    * bundle. The link hub's own shorteners and the legacy degraded redirectors
    * are deliberately never used. All links are real and verified, and the fine
-   * print carries the required non-affiliation note (PRD §12.2) plus the Acast
+   * print carries the required non-affiliation note (public documentation policy) plus the Acast
    * attribution the source requires.
    */
 
@@ -94,7 +94,7 @@
 <style>
   .site-footer {
     background-color: var(--ink);
-    /* Secondary text on a dark surface uses stone, never muted (DESIGN.md §2.1). */
+    /* Secondary text on a dark surface uses stone, never muted (the color rules). */
     --footer-muted: var(--stone);
   }
 
@@ -144,7 +144,7 @@
 
   .site-footer__external {
     font-size: 0.8em;
-    /* Non-directional affordance: never mirrored (DESIGN.md §3.3-5). */
+    /* Non-directional affordance: never mirrored (the Persian typographic rules-5). */
     direction: ltr;
     unicode-bidi: isolate;
     color: var(--footer-muted);

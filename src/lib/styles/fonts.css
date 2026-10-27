@@ -1,5 +1,5 @@
 /**
- * Self-hosted Persian-first type system (docs/DESIGN.md §3).
+ * Self-hosted Persian-first type system (users and journeys).
  *
  * Three families, each from a maintained @fontsource package at a pinned
  * version (SIL Open Font License 1.1 — see licenses/fonts-*.txt):
@@ -12,7 +12,7 @@
  * download a subset file when rendered text actually falls inside its
  * `unicode-range`, so Persian pages pull the Arabic file and nothing else.
  * First-view woff2 payload with the rendered subsets is ~190 KB, inside the
- * ≤ 350 KB budget in DESIGN.md §3.1.
+ * ≤ 350 KB budget in type families.
  *
  * System fallback (used before the webfonts arrive, and if they fail to load):
  * Tahoma for Persian — it ships with every Windows and macOS system and has

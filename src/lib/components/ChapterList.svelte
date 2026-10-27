@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * «فهرست بخش‌ها» — the episode's chapter list (docs/DESIGN.md §5.5).
+   * «فهرست بخش‌ها» — the episode's chapter list (the episode-detail composition).
    *
    * Rendered from validated source chapters only (schema §5.3): every stamp
    * and label comes from the feed, and when the source has none the section
@@ -11,10 +11,10 @@
    * that metadata is in and the stamp is inside the media duration
    * (player.ts `seekChapter`) — so a bad stamp can never claim to have played
    * somewhere the audio cannot go. Without an enclosure the rows are plain
-   * list items: a button that cannot act is worse than no button (PRD §7.4).
+   * list items: a button that cannot act is worse than no button (no inert controls).
    *
    * Mono stamps are isolated LTR runs; the playing row carries an accent tick
-   * *and* a glyph swap, so the state is never color-only (PRD §10).
+   * *and* a glyph swap, so the state is never color-only (accessibility).
    */
 
   import { activeChapterIndex, seekChapter, type PlayerState } from "#lib/player";
@@ -93,7 +93,7 @@
     background: none;
     border: none;
     /* Every row carries the transparent tick border, so activating a row
-       never shifts its text (PRD §11.2). */
+       never shifts its text (performance). */
     border-inline-start: 2px solid transparent;
     border-radius: var(--r-inner);
     text-align: start;
@@ -113,7 +113,7 @@
   }
 
   /* The accent tick: a >=3px non-text fill on paper, always with the glyph
-     swap beside it (DESIGN.md §2.1 — state is never color alone). */
+     swap beside it (the color rules — state is never color alone). */
   .chapters__row--active .chapters__button {
     border-inline-start-color: var(--accent);
   }

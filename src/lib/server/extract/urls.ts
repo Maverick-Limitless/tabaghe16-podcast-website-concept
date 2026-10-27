@@ -4,11 +4,11 @@
  * Every URL that enters the store or the rendered page passes through here
  * first. The policy is deliberately narrow: `https:` only, an explicit host
  * allowlist for feed-derived URLs, and a rejection path that returns `null`
- * rather than a "best guess" URL. PRD §9.2 — reject unsafe URI schemes; do not
+ * rather than a "best guess" URL. feed and link security — reject unsafe URI schemes; do not
  * accept untrusted URLs.
  *
  * `null` is a first-class result. A missing URL means the corresponding
- * control is omitted at render time (PRD §7.4 — no inert controls), so a
+ * control is omitted at render time (no inert controls — no inert controls), so a
  * degraded link can never reach a page as a live, wrong destination.
  */
 
@@ -108,7 +108,7 @@ export function httpsUrlOn(value: unknown, hosts: readonly string[]): string | n
  * Normalize a YouTube item link to `https://www.youtube.com/watch?v=<ID>`.
  * `youtu.be/<id>` and `youtube.com/watch?v=<id>` are both understood; anything
  * else (including a channel or playlist URL) yields `null` — an embed ID is
- * never guessed (PRD §5.2, §5.5).
+ * never guessed (field mapping, §5.5).
  */
 export function normalizeYouTubeUrl(value: unknown): string | null {
   const parsed = parseHttpsUrl(value);

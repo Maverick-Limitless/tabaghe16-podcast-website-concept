@@ -1,5 +1,5 @@
 /**
- * «موجِ زیر فرش» — the signature fabric-wave press (docs/DESIGN.md §6).
+ * «موجِ زیر فرش» — the signature fabric-wave press (visual identity).
  *
  * One global stylesheet for the whole site's signature interaction, driven
  * entirely by the motion tokens. The button is a fabric membrane over a hidden
@@ -12,7 +12,7 @@
  * it, so the motion is one system, not a per-button one-off.
  *
  * All animated properties are transform/opacity/filter: no layout property
- * ever moves, so the wave cannot create a layout shift (PRD §7.2).
+ * ever moves, so the wave cannot create a layout shift (motion grammar).
  */
 
 /*
@@ -187,7 +187,7 @@
 /*
  * Ink face (the hero CTA, the play control, the listen band): the room at
  * night. Its wave tint is paper, its shine is ink — the light and shadow of
- * a lit window against the facade (DESIGN.md §2.1, §6).
+ * a lit window against the facade (the color rules, §6).
  */
 .wave-btn--ink {
   background-color: var(--ink);
@@ -248,7 +248,7 @@
 /*
  * Round play controls: the listen band's main control (56px) and the
  * mini-player's (40px). One shape system — --r-chip-derived circle, not a
- * separate ad-hoc circle per player (PRD §6.4).
+ * separate ad-hoc circle per player (one coherent radius system).
  */
 .wave-btn--round {
   width: 56px;
@@ -329,7 +329,7 @@
 }
 
 /*
- * Reduced motion (PRD §7.1.8): no travelling wave, no scale — only an
+ * Reduced motion (reduced motion): no travelling wave, no scale — only an
  * immediate 120 ms colour shift, plus the same ink focus ring. Nothing about
  * the button's function changes.
  */

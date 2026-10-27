@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * Partnerships — docs/ARCHITECTURE.md §9.1, PRD §6.7.
+   * Partnerships — docs/ARCHITECTURE.md §9.1, no invented taxonomies.
    *
    * Professional and concise, with no invented audience numbers, CPM,
    * demographics, conversion rates, sponsor names, packages, or testimonials.

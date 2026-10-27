@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * Topic archive — docs/ARCHITECTURE.md §9.4; DESIGN.md §7 (topics are
+   * Topic archive — docs/ARCHITECTURE.md §9.4; the copy direction (topics are
    * editor-curated only).
    *
    * The episode list is the curated membership by GUID, newest first. When

@@ -1,6 +1,6 @@
 /**
- * Deterministic search normalization — docs/DESIGN.md §5.6 ("Search and
- * smart discovery without AI"), PRD §5.6.
+ * Deterministic search normalization — "search and smart discovery
+ * without AI": one shared function for both sides of the archive.
  *
  * One shared function for both sides of the archive: the loader normalizes
  * each row's searchable text once at build time, the page normalizes the
@@ -19,7 +19,7 @@
  *  - All whitespace runs collapsed to single spaces.
  *
  * The original display text is never altered — this form exists only for
- * comparison (PRD §5.6: normalize "without damaging the original display
+ * comparison (deterministic search: normalize "without damaging the original display
  * text").
  */
 

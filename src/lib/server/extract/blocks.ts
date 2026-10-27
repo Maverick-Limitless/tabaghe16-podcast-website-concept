@@ -1,6 +1,6 @@
 /**
- * Description blocks — the shared substrate for §6.3 (chapters) and §6.4
- * (sponsors).
+ * Description blocks — the shared substrate for the extraction rules of
+ * docs/ARCHITECTURE.md §6.3 (chapters) and §6.4 (sponsors).
  *
  * Feed descriptions are HTML, but both extraction rules work on *blocks*: the
  * `<p>`-delimited runs (§6.1c: "blocks = split on `<p>`/`</p>`/`<br>`, tags
@@ -69,7 +69,7 @@ export function isChapterBlock(block: DescriptionBlock): boolean {
 /**
  * The Acast footer sentence append to every description. Kept verbatim per
  * CONTENT_SOURCES.md:129 and rendered as the «میزبانی روی آکست» fine print
- * (DESIGN.md §5.5) — never merged into the prose.
+ * (the episode-detail composition) — never merged into the prose.
  */
 const ACAST_FOOTER_PATTERN = /^hosted on acast\.?\s+see acast\.com\/privacy/i;
 

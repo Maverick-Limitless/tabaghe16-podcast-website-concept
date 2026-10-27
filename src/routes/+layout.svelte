@@ -4,14 +4,14 @@
    *
    * Design system entry point: the token layer, the base layer, and the
    * self-hosted Persian webfonts are loaded here, in that order, so every
-   * component stands on one foundation (docs/DESIGN.md).
+   * component stands on one foundation (the design system spec).
    */
 
   import "../lib/styles/fonts.css";
   import "../lib/styles/tokens.css";
   import "../lib/styles/base.css";
 
-  // Preloaded: the two variable families DESIGN.md §3.1 names for first view.
+  // Preloaded: the two variable families type families names for first view.
   // IBM Plex Mono is Latin-only and small enough to load at normal priority.
   import estedadArabic from "@fontsource-variable/estedad/files/estedad-arabic-wght-normal.woff2?url";
   import vazirmatnArabic from "@fontsource-variable/vazirmatn/files/vazirmatn-arabic-wght-normal.woff2?url";

@@ -1,6 +1,6 @@
 /**
  * The signature fabric-wave press and the reduced-motion contract
- * (PRD §7.1, §13.3).
+ * (the fabric-wave press, §13.3).
  *
  * The wave's observable geometry is asserted directly: a pointer press
  * writes the contact point as --wx/--wy percentages and enters the

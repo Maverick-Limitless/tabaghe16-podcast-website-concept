@@ -1,7 +1,7 @@
 <script lang="ts">
   /**
    * Episode artwork — the one image process for the whole site
-   * (docs/DESIGN.md §4).
+   * (the imagery system).
    *
    * The feed's per-episode artwork is the only verified image source, and it
    * arrives from the source host at unpredictable speed. This component
@@ -195,7 +195,7 @@
 
   /*
    * The plate number is an editorial figure in Persian digits — the display
-   * face, per the bilingual-digit rule (DESIGN.md §3.3-2): mono is for
+   * face, per the bilingual-digit rule (the Persian typographic rules-2): mono is for
    * Latin machine data only, and Plex Mono carries no Arabic glyphs, so
    * the digits would fall through to a system face anyway.
    */

@@ -1,9 +1,9 @@
 /**
- * Guest profile data — docs/ARCHITECTURE.md §9.1; DESIGN.md §5.5 guest rules.
+ * Guest profile data — docs/ARCHITECTURE.md §9.1; the episode-detail composition guest rules.
  *
  * A profile exists only for a person the extraction rules confirmed (the
  * store is the sole source: no bios are written here, because none are
- * verified — PRD §6.7). The page is the person's episode list in newest
+ * verified — no invented taxonomies). The page is the person's episode list in newest
  * order, with the honest count the store can support.
  */
 

@@ -23,7 +23,7 @@ describe("slugifyPerson", () => {
   });
 
   it("handles mixed Latin + Persian names token by token", () => {
-    // The design doc's own example name (DESIGN.md §3.3-4).
+    // The design doc's own example name (the Persian typographic rules).
     expect(slugifyPerson("Mohsen Malayeri محسن ملایری")).toBe("mohsen-malayeri-محسن-ملایری");
   });
 

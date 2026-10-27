@@ -3,7 +3,7 @@
  *
  * Topics are an editor-curated deterministic list in `data/topics.json`; they
  * are never mined from descriptions, because the feed carries no per-item
- * categories and an invented taxonomy is what PRD §6.7 forbids. The file ships
+ * categories and an invented taxonomy is what no invented taxonomies forbids. The file ships
  * empty, so this load returns an empty list until a human curates one.
  */
 

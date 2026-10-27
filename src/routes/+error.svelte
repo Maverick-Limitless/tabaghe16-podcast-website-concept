@@ -5,7 +5,7 @@
    * Also the `404.html` the static adapter emits for unmatched URLs, so it is
    * self-contained: it must render even when the layout's data failed to load.
    *
-   * Copy direction from DESIGN.md §7: emptiness gives directions, not mood.
+   * Copy direction from the copy direction: emptiness gives directions, not mood.
    */
 
   import { page } from "$app/state";

@@ -4,7 +4,7 @@
  * These tests run the real pipeline over the sanitized fixture feed: raw
  * validation → normalization → extraction (title/guests, chapters, sponsors)
  * → a store-shaped `Episode`. They pin the invariants the site's honesty
- * rests on (PRD §1.4): every field is copied from the feed, derived by a
+ * rests on (no invented content): every field is copied from the feed, derived by a
  * documented rule, or null — and an item that cannot be stored honestly is
  * rejected with a reason, never mangled into the store.
  *

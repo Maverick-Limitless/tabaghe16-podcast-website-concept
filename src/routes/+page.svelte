@@ -1,12 +1,12 @@
 <script lang="ts">
   /**
-   * Home — docs/DESIGN.md §5.1 and §7.
+   * Home — the home composition and §7.
    *
    * The thesis line and the deck are the design's proposed editorial copy, not
-   * official show copy (PRD §6.7). Every figure in the deck is interpolated
+   * official show copy (no invented taxonomies). Every figure in the deck is interpolated
    * from the synced store at render time — no total is ever hard-coded, because
-   * the feed grows (PRD §2.2). With an unsynchronized store the page says so
-   * plainly instead of inventing content (PRD §1.4).
+   * the feed grows (dynamic counts, never hard-coded). With an unsynchronized store the page says so
+   * plainly instead of inventing content (no invented content).
    */
 
   import EpisodeArt from "#lib/components/EpisodeArt.svelte";
@@ -328,7 +328,7 @@
   }
 
   /* The single slot that keeps source colour: colour is the present tense
-     (DESIGN.md §4). The geometry and the plate live in EpisodeArt. */
+     (the imagery system). The geometry and the plate live in EpisodeArt. */
   .featured__art {
     display: block;
   }
@@ -342,7 +342,7 @@
   /*
    * The section heading: the folio label's hairline runs to the far edge,
    * and the archive link sits at that edge — the label is navigation, so
-   * the row it names carries its destination (DESIGN.md §3.3-1).
+   * the row it names carries its destination (the Persian typographic rules-1).
    */
   .recent__heading {
     display: flex;

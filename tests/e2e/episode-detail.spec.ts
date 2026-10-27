@@ -1,11 +1,11 @@
 /**
  * Episode detail — the core journey: from the page to hearing the episode
- * at the right minute (PRD §5.4, §5.5, §13.3).
+ * at the right minute (chapters only from source metadata, §5.5, §13.3).
  *
  * Media playback runs against a local silent-WAV fixture served from the
  * enclosure's URL, so the play/pause/seek/chapter behaviors are tested
  * deterministically — clearly a fixture, never live external playback
- * (PRD §13.3). The artwork host stays blocked; the plate system carries
+ * (end-to-end testing). The artwork host stays blocked; the plate system carries
  * the media box, which is itself part of the contract under test.
  */
 
@@ -91,7 +91,7 @@ test("the seek slider moves the play head while playing", async ({ page }) => {
     .poll(async () => page.evaluate(() => !document.querySelector("audio")!.paused))
     .toBe(true);
 
-  // Seek through the keyboard — the real, accessible path (PRD §10):
+  // Seek through the keyboard — the real, accessible path (accessibility):
   // each arrow steps the slider by 1% of the episode and the handler seeks
   // the element. The presses are paced like a human's because the slider
   // is progress-bound: the value re-normalizes after every seek.

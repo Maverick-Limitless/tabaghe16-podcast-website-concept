@@ -5,7 +5,7 @@
  * rules, and writes the committed JSON store the pages render. Idempotent:
  * running it twice leaves the store byte-identical except `lastSeenAt`.
  *
- * Network policy (PRD §9.2): the feed URL is the single allowlisted constant
+ * Network policy (feed and link security): the feed URL is the single allowlisted constant
  * from config.ts — never request input — fetched with a timeout, a response
  * size cap, and a post-fetch host check. `--input <file>` runs the identical
  * pipeline from a local file, which is how the fixture-based tests and
